@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/meta.ico" type="image/x-icon">
+    <title>STARLIKES</title>
+</head>
+<body class="kabinet">
+    <div class="container">
+        <nav class="navigate">
+            <div class="nav-content flex-row">
+                <a href="index.html"><div class="logo-box"><img class="logo" src="img/logo.svg"></div></a>
+                <div class="second-box flex-row">
+                    <div class="text-box flex-row">
+                        <div class="lkname-select open-nav_button buttonopen"><a style="color: #ffffff;" class="text-low lkname navtext weight-700"><img class="logo-buttons" src="img/name-logo.svg">vladislove<img class="active arrow-down" src="img/arrow-dorwn.svg"></a>
+                            <div class="lkname-box_open lkname-box navbutton_open">
+                                <div class="flex-column">
+                                    <div class="flex-row opened-button_box"><img src="img/edit.svg"><a class="color-white text-lowest opened-button_text weight-500">Изменить профиль</a></div>
+                                    <div class="flex-row opened-button_box"><img src="img/profile-exit.svg"><a class="color-white text-lowest opened-button_text weight-500">Выйти</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a class="notificate"><img src="img/notificate.svg"></a>
+                        <a style="color: white;" class="text-low lkbalance navtext weight-700">Баланс:<span class="color-purple weight-500">0.00₽</span><img class="add-money" src="img/plus-money.svg"></a>
+                    </div>
+                    <div class="nav-dots mobile">
+                        <img class="dots" src="img/dots.svg">
+                    </div>
+                    <div class="button-box flex-row">
+                        <div class="navbutton langbutton buttonopen open-nav_button" id="nav-open_button"><img class="logo rulogo" src="img/ru.svg"></div>
+                        <div class="navbutton_open langbutton_open"><img class="logo enlogo" src="img/en.svg"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="main-content flex-row lk">
+            <nav class="left-nav">
+                <div class="text-buttons flex-column">
+                    <a href="lk.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons" src="img/add.svg">Новый заказ</a>
+                    <a href="orders.html" class="nav-button text-low color-purple weight-500 active"><img class="logo-buttons active" src="img/zakazi.svg">Мои заказы</a>
+                    <a href="uslugi.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons" src="img/uslugi.svg">Услуги</a>
+                    <a href="balance.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons" src="img/balance.svg">Баланс</a>
+                    <a href="referals.html"  class="nav-button text-low color-purple weight-500"><img class="logo-buttons" src="img/referals.svg">Рефералы</a>
+                    <a href="support.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons" src="img/support.svg">Поддержка</a>
+                </div>
+            </nav>
+            <div class="choice-content" id="choice">
+                <div class="order-head flex-row" style="justify-content: space-between;">
+                    <h1 class="choice-title text-choice-title text-med color-white">Мои заказы</h1>
+                    <h1 class="text-choice-title order-settings text-med color-white weight-500"><img class="logo-buttons" src="img/findsettings.svg">Показать активные</h1>
+                </div>
+                <div class="flex-column oders-list">
+                    <div class="flex-column order-list-box">
+                        <div class="choice-inbox_title">
+                            <div class="flex-row">
+                                <a class="text-verylow weight-700 color-white">Номер заказа</a>
+                                <a class="text-verylow order-social weight-700 color-white">Соц. сеть</a>
+                                <a class="text-verylow weight-700 color-white">Вид накрутки</a>
+                                <a class="text-verylow weight-700 color-white">Цена</a>
+                                <a class="text-verylow weight-700 color-white">Статус</a>
+                            </div>
+                        </div>
+                        <div class="choice-inbox">
+                            <Div class="flex-row">
+                                <a onclick="hideBlock(); showBlock()" class="text-verylow order-number weight-500 color-lightgrey">#20033</a>
+                                <a class="text-verylow order-social weight-500 color-lightgrey">instagram</a>
+                                <a class="text-verylow order-text weight-500 color-lightgrey type-of-service">👥 Instagram Followers - 
+                                    [REAL+ AUTREFILL 30...</a>
+                                <a class="text-verylow weight-500 order-price color-lightgrey">33.00₽</a>
+                                <a class="text-verylow weight-500 order-status order-status-box color-lightgrey">активен</a>
+                            </Div>
+                        </div>
+                        <div class="choice-inbox choice-inbox_bottom">
+                            <Div class="flex-row">
+                                <a class="text-verylow order-number weight-500 color-lightgrey">#20015</a>
+                                <a class="text-verylow order-social weight-500 color-lightgrey">instagram</a>
+                                <a class="text-verylow order-text weight-500 color-lightgrey type-of-service">👥 Instagram Followers - 
+                                    [REAL+ AUTREFILL 30...</a>
+                                <a class="text-verylow weight-500 order-price color-lightgrey">33.00₽</a>
+                                <a class="text-verylow weight-500 order-status order-stutas_end order-status-box color-lightgrey">завершен</a>
+                            </Div>
+                        </div>
+                    </div>
+                </div>
+                <div class="number-list">
+                    <div class="flex-row">
+                        <img src="img/circle-left.svg">
+                        <a class="number-list_select active-list color-white weight-700 text-verylow">1</a>
+                        <a class="number-list_select color-white weight-700 text-verylow">2</a>
+                        <a class="number-list_select color-white weight-700 text-verylow">3</a>
+                        <a class="number-list_select color-white weight-700 text-verylow">...</a>
+                        <a class="number-list_select color-white weight-700 text-verylow">32</a>
+                        <img src="img/circle-right.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="choice-content" id="choice2">
+                <div class="order-head flex-row" style="justify-content: space-between;">
+                    <h1 class="weight-500 choice-title back-button text-choice-title text-low color-white" onclick="hideBlock2(); showBlock2()"><img class="logo-buttons" src="img/back.svg">Назад</h1>
+                        <div class="flex-column">
+                            <div class="flex-row">
+                                <a class="text-med color-white weight-700">Заказ №20033</a>
+                                <a class="text-verylow weight-500 order-status order-status-box color-lightgrey">активен</a>
+                            </div>
+                            <a class="date-order text-low color-lightgrey weight-700">Дата заказа: <span class="weight-500">20.03.2022</span></a>
+                        </div>
+                    <a style="color: #ffffff;" class="trybutton text-low weight-700 flex-row" onclick="hideBlock3(); showBlock3()">Повторить<img class="logo-ok" src="img/next.svg"></a>
+                </div>
+                <div class="flex-column">
+                    <div class="order-info flex-column">
+                        <div class="order-info_main flex-row">
+                            <div class="order-info_place big-box">
+                                <h1 class="choice-title text-choice-title text-low color-white">Данные о заказе</h1>
+                                <div class="order-info_box flex-column">
+                                    <div class="order-info_text flex-column">
+                                        <a class="color-lightpink weight-500 text-verylow">Социальная сеть</a>
+                                        <a class="color-white weight-500 text-low">Instagram</a>
+                                        <div class="border-bot"></div>
+                                    </div>
+                                    <div class="order-info_text flex-column">
+                                        <a class="color-lightpink weight-500 text-verylow">Вид накрутки</a>
+                                        <a class="color-white weight-500 text-18px">👥 Instagram Followers -<br/> 
+                                            [REAL+ AUTOREFILL 30D]</a>
+                                        <div class="border-bot"></div>
+                                    </div>
+                                    <div class="order-info_text flex-column">
+                                        <a class="color-lightpink weight-500 text-verylow">Количество</a>
+                                        <a class="color-white weight-500 text-low">300 шт.</a>
+                                        <div class="border-bot"></div>
+                                    </div>
+                                    <div class="order-info_text flex-column">
+                                        <a class="color-lightpink weight-500 text-verylow">Цена</a>
+                                        <a class="color-white weight-500 text-low">33.00₽</a>
+                                        <div class="border-bot"></div>
+                                    </div>
+                                    <div class="order-info_text flex-column">
+                                        <a class="color-lightpink weight-500 text-verylow">Ссылка</a>
+                                        <a class="color-white weight-500 text-low">www.instagram.com/vladislove/</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-info_place little-box">
+                                <h1 class="choice-title text-choice-title text-low color-white">Описание</h1>
+                                <div class="order-info_box">
+                                    <a class="text-verylow color-white weight-500">🔴 AFTER ORDERING, YOU NEED 
+                                        TO WRITE TO SUPPORT YOUR 
+                                        ORDER NUMBER AND WAIT FOR 
+                                        SUPPORT TO LAUNCH YOUR 
+                                        ORDER<br/>
+                                        ⏱ ️Start: 1-30 min<br/>
+                                        ⚡ ️Speed: 10000/D<br/>
+                                        ✔ ️Quality : REAL AND NO DROP<br/>
+                                        ⚠️ Cancel Button: Disabled<br/>
+                                        🔴 Drop: 0%<br/>
+                                        🟢 REFILL 30D</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-info">
+                            <div class="order-head flex-row" >
+                                <h1 class="choice-title text-choice-title text-low color-white">Информация об оплате</h1>
+                            </div>
+                            <div class="flex-column oders-list">
+                                <div class="flex-column order-list-box" style="justify-content: space-between;">
+                                    <div class="choice-inbox_title payment-info_title">
+                                        <div class="flex-row">
+                                            <a class="text-verylow weight-700 color-white">Дата</a>
+                                            <a align="center" class="text-verylow order-social weight-700 color-white">Метод<br/>пополнения</a>
+                                            <a class="text-verylow weight-700 color-white">Сумма</a>
+                                            <a class="text-verylow weight-700 color-white">Номер заказа</a>
+                                            <a class="text-verylow status weight-700 color-white">Статус</a>
+                                        </div>
+                                    </div>
+                                    <div class="choice-inbox">
+                                        <div class="flex-row">
+                                            <a class="text-verylow weight-500 color-lightgrey">20.02.2022</a>
+                                            <a class="text-verylow order-payment weight-500 color-lightgrey">Онлайн-касса</a>
+                                            <a class="text-verylow order-text weight-500 color-lightgrey type-of-service">33.00₽</a>
+                                            <a class="text-verylow order-number weight-500 color-lightgrey">#20033</a>
+                                            <a class="text-verylow weight-500 order-status order-status-box color-lightgrey">подтвержден</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const hide = document.getElementById('choice');
+        const show = document.getElementById('choice2');
+        const hide2 = document.getElementById('choice2')
+        const show2 = document.getElementById('choice')
+        const hide3 = document.querySelector('.choice-content-2');
+        const show3 = document.getElementById('choice3');
+        const hide4 = document.getElementById('choice3');
+        const show4 = document.querySelector('.choice-content-2');
+        function hideBlock() {
+            hide.style.display='none';
+        }
+        function showBlock() {
+            show.style.display='block';
+        }
+        function hideBlock2() {
+            hide2.style.display='none';
+        }
+        function showBlock2() {
+            show2.style.display='block';
+        }
+        function hideBlock3() {
+            hide3.style.display='none';
+        }
+        function showBlock3() {
+            show3.style.display='block';
+        }
+        function hideBlock4() {
+            hide4.style.display='none';
+        }
+        function showBlock4() {
+            show4.style.display='block';
+        }
+    </script>
+    <script src="js/select2.js"></script>
+</body>
+</html>

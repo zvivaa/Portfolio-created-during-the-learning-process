@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>TikTokCash</title>
+</head>
+<body class="body">
+  <nav class="navbar">
+    <div class="container-menu flex-column "id="container" style="justify-content: space-between">
+          <img class="menu-logo" src="fonts/TikTokCash.svg" alt="logo">
+        <div class="balance flex-column">
+              <span class="size-23 padding-menu" style="margin-bottom: 6px">Баланс</span>
+              <span class="size-23 color-purple flex-row tikcash"             
+                  style="
+                  font-weight: 800;
+                  align-items: baseline;
+                  margin-bottom: 20px;
+              ">129 TikCash<img class="tikcash-img" src="fonts/tiktok_purple.svg"></span>
+              <span class="size-16 padding-menu color-gray" style="margin-bottom: 11px">12,9 рублей</span>
+              <span class="size-16 padding-menu color-gray" style="margin-bottom: 30px">10 TikCash = 1₽</span>
+              <div class="withdraw flex-row padding-menu selected" onclick="document.getElementById('pop-up3').style.display='block'">
+                  <img src="fonts/Vector.svg" alt="" />
+                  <span class="size-16 menu-vivod" style="padding-left: 18px" >Вывести</span>
+              </div>
+          </div>
+          <div class="menu flex-column" id="menu">
+              <div class=" menu-item padding-menu flex-row selected" >
+                <a href="index.html"><img class="menu-img selected-img flex-row" src="fonts/user.svg" alt=""/></a>
+                <span class="size-18 menu-text"><a href="index.html">Профиль</a></span>
+              </div>
+            
+            <div class="menu-item padding-menu flex-row selected" >
+              <a href="magazine.html"><img class="menu-img selected-img" src="fonts/store.svg" alt="" /></a>
+              <a href="magazine.html"><span class="size-18 menu-text" >Магазин</span></a>
+            </div>
+
+            <div class="menu-item padding-menu flex-row selected">
+              <a href="top.html"><img class="menu-img" src="fonts/top.svg" alt="" /></a>
+              <span class="size-18 menu-text" ><a href="top.html">Топ</a></span>
+            </div>
+            <div class="desk-img">
+              <div class="menu-item padding-menu flex-row selected" style="
+              filter: invert(48%) sepia(53%) saturate(5322%) hue-rotate(
+              228deg) brightness(94%) contrast(100%);
+              cursor: pointer;
+              border-right: 3px solid #7361ef;
+
+              ">
+                <img class="menu-img" src="fonts/referals.svg" alt="" />
+                <span class="size-18 menu-text" ><a href="refferals.html">Рефералы</a></span>
+              </div>
+            </div>
+            <div class="select-mob">
+              <div class="mobile-item" style="
+              filter:  brightness(0) invert(1);
+              ">
+              <img class="menu-img1 flex-row selected-mob-img" src="fonts/referals.svg" alt=""/>
+              <span class="size-18 menu-text">Магазин</span>
+              </div>
+            </div>
+            <div class="menu-item padding-menu flex-row selected">
+              <a href="more.html"><img class="menu-img" src="fonts/more.svg" alt="" /></a>
+              <span class="size-18 menu-text" ><a href="more.html">Ещё</a></span>
+            </div>
+          </div>
+          <div class="nav-exit padding-menu flex-row selected">
+            <img class="menu-img" src="fonts/exit.svg" alt="" />
+            <span class="size-16 exit" >Выход</span>
+        </div>
+    </div>
+</nav>
+
+    <div class="pop-up3" id="pop-up3">
+      <div id="pop-up-body3" class="pop-up-body3 flex-column" style="justify-content: space-between">
+        <form action="">
+          <span class="size-35" style="font-weight: 700; margin: auto;">Вывести</span>
+          <div class="flex-row" style="justify-content: space-between">
+            <img style="float: right; margin-left: 600px" id="pop-up-close3" class="pop-up-close" onclick="document.getElementById('pop-up3').style.display='none';" src="fonts/close.svg" alt="">
+          </div>
+          
+          <div class="select-wrapper active" id="select-wrapper2" style="margin-top: 90px;">
+            <div class="select" id="select">
+              <div class="select-header" id="select-header">
+                <span class="select-current">QIWI</span>
+              </div>
+              <div class="select-body" id="select-body">
+                <div class="select-item"></div>
+                <div class="select-item">ЮMoney</div>
+                <div class="select-item">Банковская карта</div>
+                <div class="select-item">Apple Pay</div>
+              </div>
+            </div>
+          </div>
+          <input id="vvod2" class="vvod" type="text2"  style="margin-top: 20px; width: 370px;" placeholder="Введите номер вашего кошелька">
+          <input id="vvod2" class="vvod" type="text2"  style="margin-top: 20px; width: 370px;" placeholder="Сумма вывода от 400₽ до 5 000₽">
+          <input id="btn-deposite2" class="btn-deposite" type="button" style="margin-top: 30px;" value="Вывести деньги">
+        </form>
+      </div>
+    </div>
+
+    <div class="hero-content">
+        <div class="header flex-row">
+          <span class="size-35" style="font-weight: 700;margin-left: 15px;">Рефералы</span>
+          <div class="flex-row selected">
+            <img class="hero-exit-img" src="fonts/Group.svg" alt="" />
+            <span class="size-16 telegram vxod-desk" style="font-weight: 700"
+              >Войти с помощью Telegram</span>
+            <span class="size-16 telegram vxod-mob" style="font-weight: 700;"
+            >Войти</span>
+          </div>
+        </div>
+        <div class="referals-window">
+          <div class="referals-content" style="height: 100%">
+            <div
+              class="flex-column"
+              style="justify-content: space-evenly; height: 100%"
+            >
+              <span class="size-36 color-purple ref-title" style="font-weight: 700">Реферальная программа</span
+              >
+              <span class="size-26 color-gray ref-subtitle">Приглашей друзей и получай<br/>по 300 TikCash за каждого +20 <img class="crown-img" src="images/crown.png"></span
+              >
+            </div>
+            <div class="ref-column marginleftinvite">
+              <input class="ref-link " type="text1" readonly="readonly" id="copy1" value="https://tiktokscoin.ru?ref=217548">
+              <input class="btn-watch2" type="button" value="Пригласить друзей">
+            </div>
+          </div>
+        </div>
+        <div class="size-26 color-gray top-maintitle" style="margin-left: 15px;">Топ-6 ваших рефералов</div>
+        <div class="ref-content" >
+          <div class="top-flex ref-width" style="height: 100%">
+            <div class="flex-row ref-width" style="justify-content: space-evenly; height: 100%">
+              <div class="flex-row">
+                <span class="size-36 number" style="font-weight: 600;">1</span>
+                <span class="circle-35 refcircle_1" style="border-radius: 50%; background-color: #FE9417;"></span>
+              </div>
+              <div class="flex-column statistic1">
+                <span class="size-23 name1" style="margin-bottom: 9px;">Имя Фамилия</span>
+                <span class="size-16 color-gray">Просмотрел: 1099</span>
+            </div>
+            </div>
+            <div class="flex-row margin-left-250 ref-width top-second" style="justify-content: space-evenly; height: 100%">
+              <div class="flex-row">
+                <span class="size-36 number" style="font-weight: 600;">2</span>
+                <span class="circle-35 refcircle_2" style="border-radius: 50%; background-color: #17C7FE;"></span>
+              </div>
+              <div class="flex-column statistic2">
+                <span class="size-23 name2" style=" margin-bottom: 9px;">Имя Фамилия</span>
+                <span class="size-16 color-gray">Просмотрел: 1099</span>
+            </div>
+            </div>
+          </div>
+    
+          <div class="top-flex ref-width" style="height: 100%">
+            <div class="flex-row ref-width" style="justify-content: space-evenly; height: 100%">
+              <div class="flex-row">
+                <span class="size-36 number" style="font-weight: 600;">3</span>
+                <span class="circle-33 refcircle_3" style="border-radius: 50%; background-color: #6117FE;"></span>
+              </div>
+              <div class="flex-column statistic3">
+                <span class="size-23 name3" style="margin-bottom: 9px;">Имя Фамилия</span>
+                <span class="size-16 color-gray">Просмотрел: 1099</span>
+              </div>
+            </div>
+            <div class="flex-row margin-left-246 top-second ref-width" style="justify-content: space-evenly; height: 100%">
+              <div class="flex-row ">
+                <span class="size-36 number n4 n4referals" style="font-weight: 600;">4</span>
+                <span class="circle-35 refcircle_4" style="border-radius: 50%; background-color: #FECB17;"></span>
+              </div>
+              <div class="flex-column statistic4">
+                <span class="size-23 name4" style="margin-bottom: 9px;">Имя Фамилия</span>
+                <span class="size-16 color-gray">Просмотрел: 1099</span>
+            </div>
+            </div>
+          </div>
+    
+          <div class="top-flex ref-width" style="height: 100%; ">
+            <div class="flex-row ref-width" style="justify-content: space-evenly; height: 100%">
+              <div class="flex-row">
+                <span class="size-36 number n5" style="font-weight: 600;">5</span>
+                <span class="circle-33 refcircle_5" style="border-radius: 50%;  background-color: #DE17FE;"></span>
+              </div>
+              <div class="flex-column statistic5">
+                <span class="size-23 name5" style="margin-bottom: 9px;">Имя Фамилия</span>
+                <span class="size-16 color-gray">Просмотрел: 1099</span>
+              </div>
+            </div>
+            <div class="flex-row margin-left-248 top-second ref-width ref-bottom" style="justify-content: space-evenly; height: 100%">
+              <div class="flex-row">
+                <span class="size-36 number n6" style="font-weight: 600;">6</span>
+                <span class="circle-35 refcircle_6" style="border-radius: 50%;  background-color: #FE1786;"></span>
+              </div>
+              <div class="flex-column statistic6">
+                <span class="size-23 name6" style="margin-bottom: 9px;">Имя Фамилия</span>
+                <span class="size-16 color-gray">Просмотрел: 1099</span>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/copy.js"></script>
+    <script src="js/select.js"></script>
+</body>
+</html>

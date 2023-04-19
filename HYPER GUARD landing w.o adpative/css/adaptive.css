@@ -1,0 +1,116 @@
+@media screen and (max-width: 1375px) {
+    .container-1440 {
+        max-width: 1040px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 48px;
+        padding-left: 48px;
+    }    
+    .navigation-menu {
+        justify-content: space-evenly;
+    }
+    .head-text {
+        display: block;
+        padding-bottom: 5px;
+    }
+    .head-text:last-child {
+        padding-bottom: 0;
+    }
+    .head-text:first-child {
+        margin-top: 25px;
+    }
+    .config-button {
+        padding: 10px 10px 15px;
+    }
+    .config-billing {
+        padding: 10px 33.5px 15px;
+    }
+    .params-block-sec {
+        margin-top: 95px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        justify-content: center
+    }
+    .flex-block1, .flex-block2 {
+        margin-bottom: 15px;
+    }
+    .flex-block3 {
+       margin-left: 0;
+    }
+    .line-bn, .persone, .plane {
+        display: none;
+    }
+    .about-block {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+    .about {
+        display: inline-flex;
+    }
+    .about1 {
+        margin-left: auto;
+        margin-right: 50px;
+        padding-right: 0;
+    }
+    .about2 {
+        margin-right: 0px;
+        margin-left: 50px;
+        padding-right: 0;
+    }
+    .about3{
+        margin: auto;
+        margin-top: 50px;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+    }
+    .text-title {
+        font-size: 47.7255px
+    }
+    .block {
+        padding: 15px 27px;
+    }
+    .block-about {
+        margin-left: 6px;
+    }
+
+    .config-link {
+        display: flex;
+        margin-left: 185px;
+        align-items: center;
+    }
+    .config-link:last-child {
+        margin-left: -5px;
+    }
+    .config-link:first-child {
+        margin-left: 0;
+    }
+    .config-text {
+        display: flex;
+        margin-bottom: -55px;
+        
+    }
+    .p9:last-child {
+        margin-left: auto;
+        margin-right: 50px;
+        display: flexbox;
+    }
+    .p9 {
+        margin-top: -95px;
+        font-weight: 500;
+        font-size: 18.6879px;
+        line-height: 136.9%;
+        margin-bottom: -10px;
+        color: #EFF1FF;
+    
+    }
+
+    .p6 {
+        font-size: 12px;
+    }
+
+    .rollover {
+        padding: 0 25px;
+    }
+}

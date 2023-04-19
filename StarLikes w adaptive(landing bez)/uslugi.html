@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/meta.ico" type="image/x-icon">
+    <title>STARLIKES</title>
+</head>
+<body class="kabinet uslugi">
+    <div class="container">
+        <nav class="navigate">
+            <div class="nav-content flex-row">
+                <a href="index.html"><div class="logo-box"><img class="logo" src="img/logo.svg"></div></a>
+                <div class="second-box flex-row">
+                    <div class="text-box flex-row">
+                        <div class="lkname-select open-nav_button buttonopen"><a style="color: #ffffff;" class="text-low lkname navtext weight-700"><img class="logo-buttons" src="img/name-logo.svg">vladislove<img class="active arrow-down" src="img/arrow-dorwn.svg"></a>
+                            <div class="lkname-box_open lkname-box navbutton_open">
+                                <div class="flex-column">
+                                    <div class="flex-row opened-button_box"><img src="img/edit.svg"><a class="color-white text-lowest opened-button_text weight-500">Изменить профиль</a></div>
+                                    <div class="flex-row opened-button_box"><img src="img/profile-exit.svg"><a class="color-white text-lowest opened-button_text weight-500">Выйти</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a class="notificate"><img src="img/notificate.svg"></a>
+                        <a style="color: white;" class="text-low lkbalance navtext weight-700">Баланс:<span class="color-purple weight-500">0.00₽</span><img class="add-money" src="img/plus-money.svg"></a>
+                    </div>
+                    <div class="nav-dots mobile">
+                        <img class="dots" src="img/dots.svg">
+                    </div>
+                    <div class="button-box flex-row">
+                        <div class="navbutton langbutton buttonopen open-nav_button" id="nav-open_button"><img class="logo rulogo" src="img/ru.svg"></div>
+                        <div class="navbutton_open langbutton_open"><img class="logo enlogo" src="img/en.svg"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="main-content flex-row">
+            <nav class="left-nav">
+                <div class="text-buttons flex-column">
+                    <a href="lk.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons" src="img/add.svg">Новый заказ</a>
+                    <a href="orders.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons" src="img/zakazi.svg">Мои заказы</a>
+                    <a href="uslugi.html" class="nav-button text-low color-purple weight-500 active"><img class="logo-buttons active" src="img/uslugi.svg">Услуги</a>
+                    <a href="balance.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons" src="img/balance.svg">Баланс</a>
+                    <a href="referals.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons" src="img/referals.svg">Рефералы</a>
+                    <a href="support.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons" src="img/support.svg">Поддержка</a>
+                </div>
+            </nav>
+            <nav class="nav-bottom_mobile">
+                <div class="text-buttons flex-row">
+                    <div class="nav-button_box"><a href="lk.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons mob-button" src="img/zakazi-mob.svg">Заказы</a></div>
+                    <div class="nav-button_box"><a href="uslugi.html" class="nav-button text-low color-purple active weight-500"><img class="logo-buttons active mob-button22" src="img/uslugi-mob.svg">Услуги</a></div>
+                    <div class="nav-button_box"><a href="referals.html"  class="nav-button text-low color-purple weight-500"><img class="logo-buttons mob-button25" src="img/refs-mob.svg">Рефералы</a></div>
+                    <div class="nav-button_box"><a href="support.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons mob-button20" src="img/support-mob.svg">Поддержка</a></div>
+                </div>
+            </nav>
+            <div class="choice-content">
+                <div class="uslugi-desktop">
+                    <div class="box-content flex-column">
+                        <div class="flex-row">
+                            <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons inst" src="img/inst.svg">Instagram</a></div>
+                            <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/telegramm.svg">Telegram</a></div>
+                            <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/youtube.svg">YouTube</a></div>
+                            <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/tt.svg">Tik Tok</a></div>
+                        </div>
+                        <div class="flex-row box-choice" style="align-items: center;">
+                            <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/vk.svg">VK</a></div>
+                            <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/face.svg">Facebook</a></div>
+                            <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/twitter.svg">Twitter</a></div>
+                            <div class="box-choice_open"><a onclick="hideBlock(); positionBlock(); leftBlock(); positionBlock_2(); leftBlock_2()" class="text-verylow color-white weight-700">Показать всё<br/><span class="color-purple">[+6]</span></a></div>
+                            <div class="box-choice-social hide-choice" ><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/spotify.svg">Spotify</a></div>
+                        </div>
+                        <div class="hide-choice" id="hide-choice_id">
+                            <div class="flex-row box-choice">
+                                <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/soundcloud.svg">Soundcloud</a></div>
+                                <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/wt.svg">Web Traffic</a></div>
+                                <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/clubhouse.svg">Clubhouse</a></div>
+                                <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/reddit.svg">Reddit</a></div>
+                            </div>
+                            <div class="flex-row box-choice hide-button">
+                                <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/odnokl.svg">Одноклассники</a></div>
+                                <div class="box-choice_open box-choice_opened"><a onclick="hideBlock(); positionBlock3(); leftBlock3(); positionBlock_4(); leftBlock_4(); showBlockButton()" class="text-verylow color-white weight-700">Скрыть<br/></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uslugi-mobile">
+                    <div class="box-content flex-column">
+                        <div class="flex-row">
+                            <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons inst" src="img/inst.svg">Instagram</a></div>
+                            <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/telegramm.svg">Telegram</a></div>
+                        </div>
+                        <div class="flex-row box-choice">
+                            <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/youtube.svg">YouTube</a></div>
+                            <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/tt.svg">Tik Tok</a></div>
+                        </div>
+                        <div class="flex-row box-choice" style="align-items: center;">
+                            <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/vk.svg">VK</a></div>
+                            <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/face.svg">Facebook</a></div>
+                        </div>
+                        <div class="flex-row box-choice">
+                            <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/twitter.svg">Twitter</a></div>
+                            <div class="box-choice_open"><a onclick="hideBlock(); positionBlock(); leftBlock(); positionBlock_2(); leftBlock_2()" class="text-verylow color-white weight-700">Показать всё<br/><span class="color-purple">[+6]</span></a></div>
+                            <div class="box-choice-social hide-choice" ><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/spotify.svg">Spotify</a></div>
+                        </div>
+                        <div class="hide-choice" id="hide-choice_id">
+                            <div class="flex-row box-choice">
+                                <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/soundcloud.svg">Soundcloud</a></div>
+                                <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/wt.svg">Web Traffic</a></div>
+                                <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/clubhouse.svg">Clubhouse</a></div>
+                                <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/reddit.svg">Reddit</a></div>
+                            </div>
+                            <div class="flex-row box-choice hide-button">
+                                <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/odnokl.svg">Одноклассники</a></div>
+                                <div class="box-choice_open box-choice_opened"><a onclick="hideBlock(); positionBlock3(); leftBlock3(); positionBlock_4(); leftBlock_4(); showBlockButton()" class="text-verylow color-white weight-700">Скрыть<br/></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-column oders-list order_list-uslugi" style="justify-content: space-between;">
+                    <div class="flex-column order-list-box">
+                        <div class="choice-inbox_title">
+                            <div class="flex-row choice-inbox_title_text">
+                                <a class="text-verylow weight-700 color-white">Соц. сеть</a>
+                                <a class="text-verylow weight-700 color-white">Вид накрутки</a>
+                                <a class="text-verylow weight-700 mob-hide-text color-white" align="center" >Цена<br/>(за шт.)</a>
+                            </div>
+                        </div>
+                        <div class="choice-inbox mob-hide-text" style="border-bottom: 0;">
+                            <Div class="flex-row choice-inbox_text">
+                                <a class="text-verylow weight-500 color-lightgrey">instagram</a>
+                                <a class="order-activity text-verylow weight-500 color-lightpink">📺 Instagram Views - [BOT + SPEED 500k/D]</a>
+                                <a class="text-verylow weight-500 mob-hide-text color-lightgrey">00.11₽</a>
+                            </Div>
+                        </div>
+                        <div class="choice-inbox mob-hide-text" style="border-bottom: 0;">
+                            <Div class="flex-row choice-inbox_text">
+                                <a class="text-verylow weight-500 color-lightgrey">instagram</a>
+                                <a class="order-activity text-verylow weight-500 color-lightpink">👍 Instagram Likes - [REAL + IMPRESSION + NO DROP]</a>
+                                <a class="text-verylow weight-500 mob-hide-text color-lightgrey">00.11₽</a>
+                            </Div>
+                        </div>
+                        <div class="choice-inbox ">
+                            <Div class="flex-row choice-inbox_text">
+                                <a class="text-verylow weight-500 color-lightgrey">instagram</a>
+                                <a onclick="hidenBlock(); showedBlock()" class="order-activity text-verylow weight-500 color-lightpink">👥 Instagram Followers - [REAL+ AUTOREFILL 30D]</a>
+                                <a class="text-verylow weight-500 mob-hide-text color-lightgrey">00.11₽</a>
+                            </Div>
+                        </div>
+                        <div class="choice-inbox choice-inbox_bottom mob-hide-text">
+                            <Div class="flex-row choice-inbox_text">
+                                <a class="text-verylow weight-500 color-lightgrey">instagram</a>
+                                <a class="order-activity text-verylow weight-500 color-lightpink">✉️ Instagram Comments - [REAL + NO DROP + CUSTOM]</a>
+                                <a class="text-verylow weight-500 mob-hide-text color-lightgrey">00.11₽</a>
+                            </Div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="choice-content-2 choice-content" id="choice2">
+                <div class="order-head flex-row">
+                    <h1 class="back-button weight-500 choice-title text-choice-title text-low color-white" onclick="hidenBlock2(); showedBlock2()"><img class="logo-buttons" src="img/back.svg">Назад</h1>
+                    <h1 class="choice-title text-choice-title text-med color-white">Настройте услугу</h1>
+                </div>
+                <div class="box-content flex-column" style="justify-content: space-between;">
+                    <div class="flex-column">
+                        <h1 class="choice-title color-white weight-700 text-low">Услуга</h1>
+                        <div class="choice-roll-box flex-row">
+                            <a class="title margin-roll text-verylow color-white">👥 Instagram Followers - [REAL+ AUTOREFILL 30D]</a>
+                            <div class="pointer"><img src="img/down-lk.svg"></div>
+                        </div>
+                    </div>
+                    <div class="flex-column description">
+                        <h1 class="choice-title color-white weight-700 text-low">Описание</h1>
+                        <div class="choice-roll-box flex-row">
+                            <a class="title margin-roll text-verylow color-white">🔴 AFTER ORDERING, YOU NEED TO WRITE TO SUPPORT YOUR ORDER 
+                                NUMBER AND WAIT FOR SUPPORT TO LAUNCH YOUR ORDER
+                                ⏱ ️Start: 1-30 min<br/>
+                                ⚡️ Speed: 10000/D<br/>
+                                ✔ ️Quality : REAL AND NO DROP</a>
+                            <div class="pointer"><img src="img/down-lk.svg"></div>
+                        </div>
+                    </div>
+                    <div class="flex-column link-choice-box">
+                        <h1 class="choice-title color-white weight-700 text-low">Ссылка</h1>
+                            <input class="choice-link" type="text" class="choice-roll-box flex-row" placeholder="Введите ссылку аккаунта">
+                            <img class="logo-ok" src="img/link.svg">
+                    </div>
+                    <div class="flex-column link-choice-box">
+                        <h1 class="choice-title color-white weight-700 text-low">Количество</h1>
+                            <input class="choice-link" type="text" class="choice-roll-box flex-row" placeholder="Min: 10 - Max: 15000">
+                            <img class="logo-ok" src="img/count.svg">
+                    </div>
+                    <div class="flex-column buttons-block-choice2">
+                        <div class="amount-block flex-row"  style="justify-content: space-between;">
+                            <h1 class="flex-row choice-title text-choice-title text-med color-white">Сумма к оплате: <span class="color-purple weight-500">0.00₽</span></h1>
+                            <a style="color: #ffffff;" class="trybutton text-low weight-700 flex-row">Вперед<img class="logo-ok" src="img/next.svg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const hide = document.querySelector('.box-choice_open');
+        const show = document.querySelector('.hide-choice');
+        const show2 = document.getElementById('hide-choice_id');
+
+        const hide2 = document.querySelector('.box-choice_opened');
+        const hide3 = document.getElementById('hide-choice_id');
+        const show3 = document.querySelector('.box-choice_open');
+        const hide4 = document.querySelector('.hide-choice');
+
+        const HIDEN = document.querySelector('.choice-content');
+        const SHOWED = document.querySelector('.choice-content-2');
+
+        const SHOWED2 = document.querySelector('.choice-content');
+        const HIDEN2 = document.querySelector('.choice-content-2');
+
+        function hideBlock() {
+            hide.style.display='none';
+        }
+        function positionBlock() {
+            show.style.position='relative';
+        }
+        function leftBlock() {
+            show.style.right='0';
+        }
+        function positionBlock_2() {
+            show2.style.position='relative';
+        }
+        function leftBlock_2() {
+            show2.style.right='0';
+        }
+
+        function showBlockButton() {
+            show3.style.display='block';
+        }
+        function positionBlock3() {
+            hide3.style.position='absolute';
+        }
+        function leftBlock3() {
+            hide3.style.right='99999px';
+        }
+        function positionBlock_4() {
+            hide3.style.position='absolute';
+        }
+        function leftBlock_4() {
+            hide3.style.right='99999px';
+        }
+        function leftBlock_4() {
+            hide4.style.right='99999px';
+        }
+        function positionBlock_4() {
+            hide4.style.position='absolute';
+        }
+
+        function hidenBlock() {
+            HIDEN.style.display='none';
+        }
+        function showedBlock() {
+            SHOWED.style.display='block';
+        }
+        function hidenBlock2() {
+            SHOWED2.style.display='block';
+        }
+        function showedBlock2() {
+            HIDEN2.style.display='none';
+        }
+    </script>
+    <script src="js/select2.js"></script>
+</body>
+</html>

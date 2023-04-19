@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>TikTokCash</title>
+</head>
+<body class="body">
+  <nav class="navbar">
+      <div class="container-menu flex-column "id="container" style="justify-content: space-between">
+            <img class="menu-logo" src="fonts/TikTokCash.svg" alt="logo">
+          <div class="balance flex-column">
+                <span class="size-23 padding-menu" style="margin-bottom: 6px">Баланс</span>
+                <span class="size-23 color-purple flex-row tikcash"             
+                    style="
+                    font-weight: 800;
+                    align-items: baseline;
+                    margin-bottom: 20px;
+                ">129 TikCash<img class="tikcash-img" src="fonts/tiktok_purple.svg"></span>
+                <span class="size-16 padding-menu color-gray" style="margin-bottom: 11px">12,9 рублей</span>
+                <span class="size-16 padding-menu color-gray" style="margin-bottom: 30px">10 TikCash = 1₽</span>
+                <div class="withdraw flex-row padding-menu selected" onclick="document.getElementById('pop-up3').style.display='block'">
+                    <img class="wallet" src="fonts/Vector.svg" alt="" />
+                    <span class="size-16 menu-vivod" style="padding-left: 18px" >Вывести</span>
+                </div>
+            </div>
+            <div class="menu flex-column" id="menu">
+              <div class="desk-img">
+                <div class=" menu-item padding-menu flex-row selected" style="
+                  filter: invert(48%) sepia(53%) saturate(5322%) hue-rotate(
+                  228deg) brightness(94%) contrast(100%);
+                  cursor: pointer;
+                  border-right: 3px solid #7361ef;
+
+                  ">
+                  <img class="menu-img selected-img flex-row" src="fonts/user.svg" alt=""/>
+                  <span class="size-18 menu-text">Профиль</span>
+                </div>
+              </div>
+              <div class="select-mob">
+                <div class="mobile-item" style="
+                filter:  brightness(0) invert(1);
+                ">
+                <img class="menu-img1 flex-row selected-mob-img" src="fonts/user-mob.svg" alt=""/>
+                <span class="size-18 menu-text">Профиль</span>
+                </div>
+              </div>
+              <div class="menu-item padding-menu flex-row selected">
+                <a href="magazine.html"><img class="menu-img selected-img" src="fonts/store.svg" alt="" /></a>
+                <span class="size-18 menu-text" ><a href="magazine.html">Магазин</a></span>
+              </div>
+              <div class="menu-item padding-menu flex-row selected">
+                <a href="top.html"><img class="menu-img" src="fonts/top.svg" alt="" /></a>
+                <span class="size-18 menu-text" ><a href="top.html">Топ</a></span>
+              </div>
+              <div class="menu-item padding-menu flex-row selected">
+                <a href="refferals.html"><img class="menu-img" src="fonts/referals.svg" alt="" /></a>
+                <span class="size-18 menu-text" ><a href="refferals.html">Рефералы</a></span>
+              </div>
+              <div class="menu-item padding-menu flex-row selected">
+                <a href="more.html"><img class="menu-img" src="fonts/more.svg" alt="" /></a>
+                <span class="size-18 menu-text" ><a href="more.html">Ещё</a></span>
+              </div>
+            </div>
+            <div class="nav-exit padding-menu flex-row selected">
+              <img class="menu-img" src="fonts/exit.svg" alt="" />
+              <span class="size-16 exit" >Выход</span>
+          </div>
+      </div>
+  </nav>
+    
+
+    <div class="pop-up3" id="pop-up3">
+      <div id="pop-up-body3" class="pop-up-body3 flex-column" style="justify-content: space-between">
+        <form action="">
+          <span class="popup3-title size-35" style="font-weight: 700;">Вывести</span>
+          <div class="flex-row" style="justify-content: space-between">
+            <img style="float: right;" id="pop-up-close3" class="pop-up-close" onclick="document.getElementById('pop-up3').style.display='none';" src="fonts/close.svg" alt="">
+          </div>
+          
+          <div class="select-wrapper active" id="select-wrapper">
+            <div class="select" id="select">
+              <div class="select-headerindex vivodtop marginheader" id="select-headerindex">
+                <span class="select-current">QIWI</span>
+              </div>
+              <div class="select-body bodyindex" id="select-body">
+                <div class="select-item"></div>
+                <div class="select-item">ЮMoney</div>
+                <div class="select-item">Банковская карта</div>
+                <div class="select-item">Apple Pay</div>
+              </div>
+            </div>
+          </div>
+          <input id="vvod" class="vvod" type="text2"  placeholder="Введите номер вашего кошелька">
+          <input id="vvod" class="vvod" type="text2"   placeholder="Сумма вывода от 400₽ до 5 000₽">
+          <input id="btn-deposite" class="btn-depositeindex" type="button" value="Вывести деньги">
+        </form>
+      </div>
+    </div>
+
+    <div id="bonus" class="popup-bg">
+        <div class="popup flex-column">
+          <div class="flex-row pop-up-flex" >
+            <span class="popup-title size-35" style="font-weight: 700">Бонусы</span>
+            <img
+              class="close-popup"
+              src="fonts/close.svg"
+              alt=""
+              onclick="document.getElementById('bonus').style.display='none'"
+            />
+          </div>
+          <!-- первая карточка -->
+          <div class="card-modal">
+            <div
+              class="flex-row"
+              style="justify-content: space-between; align-items: center;width: 100%;"
+            >
+              <div class="card-text flex-column" style="max-width: 312px">
+                <span
+                  class="card-title size-26"
+                  style="font-weight: 700; color: white; margin-bottom: 7px"
+                  >20₽ на баланс</span
+                >
+                <span
+                  class="card-subtitle size-20"
+                  style="color: #ffffffad; line-height: 28, 58px"
+                  >Бонус за подписку на telegram канал</span
+                >
+              </div>
+              <input class="btn-modal" type="button" value="Получить" />
+            </div>
+            <img class="card-img-mob" src="fonts/settings-mob.svg">
+          </div>
+          <!-- вторая карточка -->
+          <div class="card-modal">
+            <div
+              class="flex-row"
+              style="justify-content: space-between; align-items: center;width: 100%;"
+            >
+              <div class="card-text flex-column" style="max-width: 312px">
+                <span
+                  class="card-title size-26"
+                  style="font-weight: 700; color: white; margin-bottom: 7px"
+                  >50₽ на баланс</span
+                >
+                <span
+                  class="card-subtitle size-20"
+                  style="color: #ffffffad; line-height: 28, 58px"
+                  >Бонус за установку
+                  приложения</span
+                >
+              </div>
+              <input class="btn-modal" type="button" value="Получить" />
+            </div>
+            <img class="card-img-mob" src="fonts/plane-mob.svg">
+          </div>
+          <!-- третья карточка -->
+          <div class="card-modal">
+            <div
+              class="flex-row"
+              style="justify-content: space-between; align-items: center;width: 100%;"
+            >
+              <div class="card-text flex-column" style="max-width: 312px">
+                <span
+                  class="card-title size-26"
+                  style="font-weight: 700; color: white; margin-bottom: 7px"
+                  >15₽ на баланс</span
+                >
+                <span
+                  class="card-subtitle size-20"
+                  style="color: #ffffffad; line-height: 28, 58px"
+                  >Каждый день
+                  бсеплатный бонус</span
+                >
+              </div>
+              <input class="btn-modal" type="button" value="Получить" />
+            </div>
+            <img class="card-img-mob" src="fonts/present-mob.svg">
+          </div>
+        </div>
+    </div>
+
+    <div class="hero-content">
+        <div class="header flex-row">
+          <span class="size-35" style="font-weight: 700; margin-left: 15px;">Профиль</span>
+          <div class="flex-row selected">
+            <img class="hero-exit-img" src="fonts/Group.svg" alt="" />
+            <span class="size-16 telegram vxod-desk" style="font-weight: 700"
+              >Войти с помощью Telegram</span>
+            <span class="size-16 telegram vxod-mob" style="font-weight: 700;"
+            >Войти</span>
+          </div>
+        </div>
+        <div class="balance-mob">
+          <div class="flex-row">
+            <span class="size-23 padding-menu" style="margin-bottom: 6px">Баланс</span>
+            <span class="size-23 color-purple flex-row tikcash">129 TikCash<img class="tikcash-img" src="fonts/tiktok_purple.svg"></span>
+          </div>
+          <div class="flex-column">
+            <span class="size-16 padding-menu color-gray" style="margin-bottom: -10px">12,9 рублей</span>
+            <span class="size-16 padding-menu color-gray" style="margin-bottom: 10px">10 TikCash = 1₽</span>
+          </div>
+          <div class="withdraw flex-row padding-menu selected" style="margin-bottom: 25px;" onclick="document.getElementById('pop-up3').style.display='block'">
+              <img src="fonts/Vector.svg" alt="" />
+              <span class="size-16 menu-vivod" style="padding-left: 18px;" >Вывести</span>
+          </div>
+      </div>
+        <div class="watch-tiktok">
+          <div class="watch-content" style="height: 100%">
+            <div
+              class="flex-column"
+              style="justify-content: space-evenly; height: 100%"
+            >
+              <span class="size-36 watch-title color-purple" style="font-weight: 700"
+                >Смотреть TikTok</span
+              >
+              <span class="size-26 watch-subtitle color-gray"
+                >10 - 50 TikCash за просмотр ролика</span
+              >
+            </div>
+            <input class="btn-watch" type="button" value="Смотреть ролик" />
+          </div>
+        </div>
+        <div
+          class="flex-row space-between"
+          style="flex-wrap: wrap; margin-bottom: 51px">
+          <div
+            class="card"
+            style="background-color: #1873ff"
+            onclick="document.getElementById('bonus').style.display='block'"
+          >
+            <div class="card-content cardselected" style="height: 100%">
+              <div class="desktop flex-row">
+                <span class="size-26 cardselected" style="font-weight: 600"
+                  >Доступные<br/>бонусы</span
+                >
+                <img class="card-img" src="fonts/present.svg" alt="" />
+              </div>
+              <div class="mobile">
+                <img class="card-img" src="fonts/present.svg" alt="" />
+                <span class="size-11 cardselected" style="font-weight: 600"
+                  >Доступные<br/>бонусы</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="background-color: #00c700">
+            <div class="card-content cardselected" style="height: 100%">
+              <div class="desktop flex-row"  style="font-weight: 600;">
+                <span class="size-26 cardselected" style="font-weight: 600; margin-top: 15px;"
+                  >Активировать<br/>ваучер</span>
+                <img class="card-img" src="fonts/coupon.svg" alt="" style="margin-top:15px;"/>
+              </div>
+              <div class="mobile">
+                <img class="card-img3" src="fonts/coupon.svg" alt="" />
+                <span class="size-11 cardselected" style="font-weight: 600"
+                >Активировать<br/>ваучер</span
+              >
+              </div>    
+            </div>
+          </div>
+          <div class="card" style="background-color: #f75f00">
+            <div class="card-content cardselected" style="height: 100%">
+              <Div class="desktop flex-row">
+                <span class="size-26 cardselected" style="font-weight: 600"
+                  >Установить<br/>приложения</span>
+                <img class="card-img " src="fonts/download.svg" alt="" >
+              </Div>
+              <div class="mobile">
+                <img class="card-img" src="fonts/download.svg" alt="" >
+                <span class="size-11 cardselected" style="font-weight: 600"
+                >Установить<br/>приложения</span>
+              </div>   
+            </div>
+          </div>
+          <div class="card" style="background-color: #f547c4">
+            <div class="card-content cardselected" style="height: 100%">
+              <Div class="desktop flex-row">
+                <span class="size-26 cardselected" style="font-weight: 600"
+                  >Помощь</span>
+                <img class="card-img" src="fonts/question.svg" alt="">
+              </Div>
+              <div class="mobile">
+                <img class="card-img4" src="fonts/question.svg" alt="" >
+                <span class="size-11 cardselected cardselected4" style="font-weight: 600"
+                >Помощь</span>
+              </div>   
+            </div>
+          </div>
+        </div>
+        <div class="history">
+          <span class="size-26" style="font-weight: 600; color: #999999"
+            >История</span
+          >
+          <div
+            class="history-block"
+            style="justify-content: space-between"
+          >
+            <div class="history-card flex-row">
+              <img class="history-img" src="fonts/Group 31.svg" alt="" />
+              <div class="flex-column">
+                <span
+                  class="size-16 history-title"
+                  style="margin-bottom: 11px; font-weight: 600"
+                  >Награда за просмотр TikTok</span
+                >
+                <span class="size-16 history-subtitle">29.01.2022 16:18 +12 TikCash</span>
+              </div>
+            </div>
+            <div class="history-card flex-row">
+              <img class="history-img" src="fonts/Group 32.svg" alt="" />
+              <div class="flex-column">
+                <span
+                  class="size-16 history-title color-light-text"
+                  style="margin-bottom: 11px; font-weight: 600"
+                  >Награда за просмотр TikTok</span
+                >
+                <span class="size-16 color-light-text history-subtitle"
+                  >29.01.2022 16:18 +12 TikCash</span
+                >
+              </div>
+            </div>
+            <div class="history-card flex-row">
+              <img class="history-img" src="fonts/Group 32.svg" alt="" />
+              <div class="flex-column">
+                <span
+                  class="size-16 history-title color-light-text"
+                  style="margin-bottom: 11px; font-weight: 600"
+                  >Награда за просмотр TikTok</span
+                >
+                <span class="size-16 color-light-text history-subtitle"
+                  >29.01.2022 16:18 +12 TikCash</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/main.js"></script>
+      <script src="js/select.js"></script>
+    </body>
+</body>
+</html>

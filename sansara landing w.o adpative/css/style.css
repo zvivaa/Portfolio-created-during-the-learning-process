@@ -1,0 +1,265 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.nav .text-head {
+    text-decoration: none;
+    color: #21242E;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+@font-face{
+    font-family: 'TT-Norms';
+    src: url(/sansara/fonts/TTNorms-Medium.otf);
+}
+
+body {
+    background-color: #f5f5f5;
+}
+/* head */
+.headinfo {
+    margin-left: 135px;
+    margin-top: 38px;
+    display: flex;
+    flex-direction: row;
+}
+.headlogo {
+    width: 340px;
+    height: 116.81px;
+    margin-right: 18px;
+}
+.headtext {
+    margin-top: 40px;
+}
+.text-head {
+    font-family: TT-Norms;
+    margin-left: 65px;
+    font-weight: 500;
+    line-height: 36px;
+    font-size: 18px;
+}
+.contact-bottom {
+    margin-top: 38px;
+}
+.svgbottom {
+    margin-left: 22px;
+}
+.svgfirst {
+    margin-left: 89px;
+}
+.text-phone {
+    font-family: TT-Norms;
+    font-size: 22px;
+    font-weight: 700;
+}
+.text-phone {
+    position: absolute;
+    margin-top: 22px;
+    margin-left: 130px;
+}
+.phonelogo {
+    position: absolute;
+    margin-top: 25px;
+}
+.calltext {
+    font-family: TT-Norms;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #95B04C;
+}
+.call {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 167px;
+}
+/* main */
+.text-box {
+    width: 1651px;
+    letter-spacing: 0.025em;
+}
+.content {
+    margin-left: 135px;
+    margin-top: 138.2px;
+    margin-right: 135px;
+}
+.maintext {
+    font-family: 'Cormorant SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 91.4839px;
+    line-height: 89px;
+    letter-spacing: 0.05em;
+}
+.text-main {
+    font-family: TT-Norms;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 36px;
+}
+.textundermain {
+    margin-top: 34px;
+    margin-bottom: 90px;
+}
+.text {
+    width: 728px;
+    height: 356px;
+}
+.button {
+    padding: 35px 73.85px 35px 73.85px;
+
+    background: #95B04C;
+    border-radius: 12px;
+}
+.text-button {
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+.contentright {
+    display: flex;
+    margin-left: 100px;
+}
+.upphoto {
+    position: absolute;
+    margin-left: -105px;
+    margin-top: -97px;
+}
+/* about */
+.about .text-about {
+    font-weight: 200;
+    color: #21242E;
+}
+.abouttitle {
+    margin-bottom: 34px;
+}
+.abouttext {
+    margin-left: 45px;
+}
+.dot {
+    position: relative;
+    margin-bottom: 10px;
+}
+.about-pic {
+    margin-top: 118px;
+}
+.text-pic {
+    font-family: TT-Norms;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28.5px;
+    width: 268px;
+    height: 143px;
+    text-align: center;
+    margin-top: 32px;
+}
+.pic {
+    align-items: center;
+}
+.secondpic {
+    margin-left: 186px;
+}
+/* uslugi */
+.uslugi .secondpic {
+    margin-left: 22px;
+}
+.uslugi .text-pic {
+    text-align: left;
+    margin-left: -40px;
+    margin-bottom: 0;
+    height: 35px;
+}
+.uslugi .text-main {
+    font-weight: 300;
+    width: 250px;
+    margin-left: -55px;
+    font-size: 16px;
+    line-height: 28px;
+}
+.slider {
+    position: absolute;
+    display: flex;
+    margin-left: 1110px;
+    margin-top: 50px;
+}
+.uslugi .calltext {
+    margin-left: -183px;
+    margin-top: 45px;
+    font-size: 18px;
+}
+.uslugi .arrow {
+   margin-top: -18px;
+}
+.pic2 .calltext {
+    margin-top: 17px;
+}
+.pic3 .calltext {
+    margin-top: 17px;
+}
+.pic3 .text-main {
+    width: 300px;
+    margin-left: -6px;
+}
+.pic4 .calltext {
+    margin-top: 17px;
+}
+.pic5 .calltext {
+    margin-top: 17px;
+}
+/* consult */
+.consult-button {
+    width: 529.3px;
+    height: 84px;
+    color: white;
+    font-family: TT-Norms;
+    font-size: 18px;
+    border: 1px #21242E;
+
+    background: #21242E;
+    border-radius: 12px;
+}
+.consult-box {
+    margin-top: 62px;
+}
+.name, .number {
+    border: 2px solid #21242E;
+    border-radius: 12px;
+    margin-right: 16px;
+    color: rgba(33, 36, 46, 0.35);
+    font-family: TT-Norms;
+    font-size: 18px;
+}
+input[type="text"] {
+    padding: 23px 278px 23px 47px;
+}
+.box {
+    width: 497px;
+    height: 588px;
+    background: #F9F9F9;
+    margin-left: 37px;
+    margin-top: -120px;
+}
+.discount-text-box {
+    margin-top: 32px;
+    margin-left: 44px;
+    width: 395px;
+}
+.discount .slider {
+    margin-top: -192px;
+    margin-left: 970px;
+}
+.footer {
+    margin-top: 136px;
+    background: #e5e5e5;
+}
+.map {
+    margin-left: 163px;
+}

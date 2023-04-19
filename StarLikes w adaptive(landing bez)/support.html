@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/meta.ico" type="image/x-icon">
+    <title>STARLIKES</title>
+</head>
+<body class="kabinet referals support">
+    <div class="container">
+        <nav class="navigate">
+            <div class="nav-content flex-row">
+                <a href="index.html"><div class="logo-box"><img class="logo" src="img/logo.svg"></div></a>
+                <div class="second-box flex-row">
+                    <div class="text-box flex-row">
+                        <div class="lkname-select open-nav_button buttonopen"><a style="color: #ffffff;" class="text-low lkname navtext weight-700"><img class="logo-buttons" src="img/name-logo.svg">vladislove<img class="active arrow-down" src="img/arrow-dorwn.svg"></a>
+                            <div class="lkname-box_open lkname-box navbutton_open">
+                                <div class="flex-column">
+                                    <div class="flex-row opened-button_box"><img src="img/edit.svg"><a class="color-white text-lowest opened-button_text weight-500">Изменить профиль</a></div>
+                                    <div class="flex-row opened-button_box"><img src="img/profile-exit.svg"><a class="color-white text-lowest opened-button_text weight-500">Выйти</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a class="notificate"><img src="img/notificate.svg"></a>
+                        <a style="color: white;" class="text-low lkbalance navtext weight-700">Баланс:<span class="color-purple weight-500">0.00₽</span><img class="add-money" src="img/plus-money.svg"></a>
+                    </div>
+                    <div class="nav-dots mobile">
+                        <img class="dots" src="img/dots.svg">
+                    </div>
+                    <div class="button-box flex-row">
+                        <div class="navbutton langbutton buttonopen open-nav_button" id="nav-open_button"><img class="logo rulogo" src="img/ru.svg"></div>
+                        <div class="navbutton_open langbutton_open"><img class="logo enlogo" src="img/en.svg"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="main-content flex-row lk">
+            <nav class="left-nav">
+                <div class="text-buttons flex-column">
+                    <a href="lk.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons" src="img/add.svg">Новый заказ</a>
+                    <a href="orders.html" class="nav-button text-low color-purple weight-500 "><img class="logo-buttons " src="img/zakazi.svg">Мои заказы</a>
+                    <a href="uslugi.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons" src="img/uslugi.svg">Услуги</a>
+                    <a href="balance.html" class="nav-button text-low color-purple weight-500 "><img class="logo-buttons " src="img/balance.svg">Баланс</a>
+                    <a href="referals.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons" src="img/referals.svg">Рефералы</a>
+                    <a href="support.html" class="nav-button text-low color-purple weight-500 active"><img class="logo-buttons active" src="img/support.svg">Поддержка</a>
+                </div>
+            </nav>
+            <nav class="nav-bottom_mobile">
+                <div class="text-buttons flex-row">
+                    <div class="nav-button_box"><a href="lk.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons mob-button" src="img/zakazi-mob.svg">Заказы</a></div>
+                    <div class="nav-button_box"><a href="uslugi.html" class="nav-button text-low color-purple  weight-500"><img class="logo-buttons  mob-button22" src="img/uslugi-mob.svg">Услуги</a></div>
+                    <div class="nav-button_box"><a href="referals.html"  class="nav-button text-low color-purple  weight-500"><img class="logo-buttons  mob-button25" src="img/refs-mob.svg">Рефералы</a></div>
+                    <div class="nav-button_box"><a href="support.html" class="nav-button text-low color-purple weight-500 active"><img class="logo-buttons active mob-button20" src="img/support-mob.svg">Поддержка</a></div>
+                </div>
+            </nav>
+            <div class="choice-content" id="choice">
+                <div class="order-head flex-mobile " style="justify-content: space-between;">
+                    <h1 class="choice-title text-choice-title text-med color-white">Поддержка</h1>
+                    <a style="color: #ffffff;" class="trybutton text-low weight-700 flex-row" onclick="document.getElementById('purchase-box').style.display='block'">Создать обращение<img class="logo-ok" src="img/next.svg"></a>
+                </div>
+                <div class="order-head history-block flex-row" style="justify-content: space-between;">
+                    <h1 style="margin-left: auto;" class="text-choice-title order-settings text-low color-white weight-500"><img class="logo-buttons" src="img/findsettings.svg">Показать нерешенные</h1>
+                </div>
+                <div class="flex-column oders-list">
+                    <div class="flex-column order-list-box">
+                        <div class="choice-inbox_title">
+                            <div class="flex-row" style="justify-content: space-between; align-items: center">
+                                <a class="text-verylow weight-700 color-white">ID</a>
+                                <div class="status_box"><a class="text-verylow weight-700 color-white">Тема</a></div>
+                                <div class="status_box"><a class="mob-hide-text text-verylow weight-700 color-white">Статус</a></div>
+                                <a class="text-verylow weight-700 mob-hide-text color-white">Последнее обновление</a>
+                            </div>
+                        </div>
+                        <div class="choice-inbox accept">
+                            <Div class="flex-row" style="justify-content: space-between; align-items: center">
+                                <div class="table-text-box_support"><a class="text-verylow weight-500 color-lightgrey">#2</a></div>
+                                <div class="table-text-box_support name-referal"><a class="text-verylow tema weight-500 color-lightgrey">Выведение средств</a></div>
+                                <div class="table-text-box_support"><a class="text-verylow mob-hide-text weight-500 order-status order-status-box color-lightgrey">решенные</a></div>
+                                <div class="table-text-box_support"><a class="text-verylow mob-hide-text weight-500 color-lightgrey">01.04.2022 @ 02:14:21</a></div>
+                            </Div>
+                        </div>
+                        <div class="choice-inbox choice-inbox_bottom mob-hide-text">
+                            <Div class="flex-row" style="justify-content: space-between; align-items: center">
+                                <div class="table-text-box_support"><a class="text-verylow weight-500 color-lightgrey">#6</a></div>
+                                <div class="table-text-box_support name-referal"><a class="text-verylow weight-500 color-lightgrey">Проблема с подкл...</a></div>
+                                <div class="table-text-box_support"><a class="text-verylow mob-hide-text weight-500 order-status order-status-box color-lightgrey">решенные</a></div>
+                                <div class="table-text-box_support"><a class="text-verylow mob-hide-text weight-500 color-lightgrey">01.04.2022 @ 02:14:21</a></div>
+                            </Div>
+                        </div>
+                    </div>
+                </div>
+                <div class="number-list">
+                    <div class="flex-row">
+                        <img src="img/circle-left.svg">
+                        <a class="number-list_select active-list color-white weight-700 text-verylow">1</a>
+                        <a class="number-list_select color-white weight-700 text-verylow">2</a>
+                        <a class="number-list_select color-white weight-700 text-verylow">3</a>
+                        <a class="number-list_select color-white weight-700 text-verylow">...</a>
+                        <a class="number-list_select color-white weight-700 text-verylow">32</a>
+                        <img src="img/circle-right.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="purchase-box" id="purchase-box">
+                <div class="purchase-window">
+                    <div onclick="document.getElementById('purchase-box').style.display='none'" class="pop-up-close flex-row" style="justify-content: end;"><img src="img/close.svg"></div>
+                    <div class="purchase-box-text"><a class="text-med color-white weight-700">Создать обращение</a></div>
+                    <div class="choice-roll-box flex-row">
+                        <div style="justify-content: space-between;" class="flex-row">
+                            <a class="title margin-roll text-low color-grey weight-500">Выберите тип обращения</a>
+                            <div class="pointer"><img src="img/down-lk.svg"></div>
+                            <div class="pointer_pancil"><img src="img/pancil.svg"></div>
+                        </div>
+                    </div>
+                    <div class="flex-column link-choice-box">
+                            <input class="choice-link" type="text" class="choice-roll-box flex-row" placeholder="Тема обращения">
+                            <div class="logo_chat" ><img src="img/input-chat.svg"></div>
+                    </div>
+                    <div class="flex-column link-choice-box big-box">
+                        <textarea class="choice-link" type="text" class="choice-roll-box flex-row" placeholder="Напишите сообщение"></textarea>
+                        <div class="logo_chat" ><img src="img/input_chat-grey.svg"></div>
+                    </div>
+                    <div class="flex-column" style="justify-content: space-between;"><a style="color: #ffffff;" class="addbutton text-low weight-700 flex-row">Добавить файл</a></div>
+                    <div class="flex-column input-name" style="justify-content:flex-start;"><input type="text" class="low-box" placeholder="Название..."><img class="logo_chat" src="img/trash.svg"></div>
+                    <div class="flex-column" style="justify-content: space-between;"><a onclick="HideNewReport(); ShowReportChat(); hideBlock()" style="color: #ffffff;" class="trybutton text-low weight-700 flex-row">Создать обращение</a></div>
+                </div>
+            </div>
+            <div class="report-chat choice-content" id="report-chat">
+                <div class="order-head flex-row">
+                    <h1 class="back-button weight-500 choice-title text-choice-title text-low color-white" onclick="HideReportChat(); showBlock2()"><img class="logo-buttons" src="img/back.svg">Назад</h1>
+                    <h1 class="choice-title name-of-support text-choice-title text-med color-white">Обращение #2</h1>
+                </div>
+                <div class="flex-column typeof-report_text" align="center">
+                    <a class="text-lowest weight-500 color-white">Тема обращения <span class="weight-700" style="color: #B55AD7;">Выведение средства</span></a>
+                    <a class="text-lowest weight-500 color-white">Тип обращения <span class="weight-700" style="color: #B55AD7;">Выведение средств на платежную систему</span></a>
+                </div>
+                <div class="flex-column oders-list">
+                    <div class="flex-column order-list-box">
+                        <div class="choice-inbox_title">
+                            <div class="flex-row" style="align-items: center">
+                                <a class="text-verylow weight-700 color-white">Статус</a><div style="font-size: 13.42px;" class="report-activity-box color-white weight-500">активен</div>
+                                <a class="text-verylow update-box weight-700 color-white"><img class="logo-chat" src="img/logo-chat-update.svg">Последнее обновление<span class="color-white weight-500 text-lowest"> 01.04.2022 @ 02:14:21</span></a>
+                            </div>
+                        </div>
+                        <div class="choice-inbox choice-inbox_chat">
+                            <div class="flex-row" style="align-items: center">
+                                <a style="color: #cbcbcb;" class="chat-date weight-700">August 21</a>
+                            </div>
+                            <div class="flex-column">
+                                <div class="chat-text-box_main">
+                                    <div class="chat-box">
+                                        <a style="color: #ffffff;" class="text-low chatname navtext weight-700"><img class="logo-buttons" src="img/name-logo.svg">vladislove</a>
+                                        <div><a class="time text-16px weight-400" style="color: #CBCBCB;">12:15</a></div>
+                                        <div class="logo-chat"><img src="img/edit-chat.svg"></div>
+                                        <div class="logo-chat"><img src="img/trash-chat.svg"></div>
+                                    </div>
+                                    <div class="chat-messege-box">
+                                        <a class="chat-text-box color-white text-18px weight-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor 
+                                        mollis leo proin turpis eu hac. Tortor dolor eu at bibendum 
+                                        suspendisse. 
+                                    </a>
+                                    </div>
+                                    <div class="flex-column input-name" style="justify-content:flex-start;"><input type="text" class="low-box" placeholder="Название..."><img class="logo_chat" src="img/trash.svg"></div>
+                                </div>
+                                <div class="write-text-box" style="align-items: center;">
+                                    <textarea class="write-text-chat" type="text" class="choice-roll-box flex-row" placeholder="Напишите сообщение..."></textarea>
+                                    <div class="logo-chat_write"><img src="img/add-file-message.svg"></div>
+                                    <div class="logo-chat_write"><img src="img/send-message.svg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        const hide = document.getElementById('choice');
+        const show = document.getElementById('choice2');
+        const hide2 = document.getElementById('choice2')
+        const show2 = document.getElementById('choice')
+        const hide3 = document.querySelector('.choice-content-2');
+        const show3 = document.getElementById('choice3');
+        const hide4 = document.getElementById('choice3');
+        const show4 = document.querySelector('.choice-content-2');
+
+        const hideNew = document.getElementById('purchase-box')
+        const showRep = document.querySelector('.report-chat')
+        function hideBlock() {
+            hide.style.display='none';
+        }
+        function showBlock() {
+            show.style.display='block';
+        }
+        function hideBlock2() {
+            hide2.style.display='none';
+        }
+        function showBlock2() {
+            show2.style.display='block';
+        }
+        function hideBlock3() {
+            hide3.style.display='none';
+        }
+        function showBlock3() {
+            show3.style.display='block';
+        }
+        function hideBlock4() {
+            hide4.style.display='none';
+        }
+        function showBlock4() {
+            show4.style.display='block';
+        }
+
+        function HideNewReport() {
+            hideNew.style.display='none';
+        }
+        function ShowReportChat() {
+            showRep.style.display='block';
+        }
+        function HideReportChat() {
+            showRep.style.display='none';
+        }
+    </script>
+    <script src="js/select2.js"></script>
+    <script src="js/select3.js"></script>
+</body>
+</html>

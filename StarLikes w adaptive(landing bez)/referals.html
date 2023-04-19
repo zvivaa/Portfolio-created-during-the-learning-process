@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/meta.ico" type="image/x-icon">
+    <title>STARLIKES</title>
+</head>
+<body class="kabinet referals">
+    <div class="container">
+        <nav class="navigate">
+            <div class="nav-content flex-row">
+                <a href="index.html"><div class="logo-box"><img class="logo" src="img/logo.svg"></div></a>
+                <div class="second-box flex-row">
+                    <div class="text-box flex-row">
+                        <div class="lkname-select open-nav_button buttonopen"><a style="color: #ffffff;" class="text-low lkname navtext weight-700"><img class="logo-buttons" src="img/name-logo.svg">vladislove<img class="active arrow-down" src="img/arrow-dorwn.svg"></a>
+                            <div class="lkname-box_open lkname-box navbutton_open">
+                                <div class="flex-column">
+                                    <div class="flex-row opened-button_box"><img src="img/edit.svg"><a class="color-white text-lowest opened-button_text weight-500">Изменить профиль</a></div>
+                                    <div class="flex-row opened-button_box"><img src="img/profile-exit.svg"><a class="color-white text-lowest opened-button_text weight-500">Выйти</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a class="notificate"><img src="img/notificate.svg"></a>
+                        <a style="color: white;" class="text-low lkbalance navtext weight-700">Баланс:<span class="color-purple weight-500">0.00₽</span><img class="add-money" src="img/plus-money.svg"></a>
+                    </div>
+                    <div class="nav-dots mobile">
+                        <img class="dots" src="img/dots.svg">
+                    </div>
+                    <div class="button-box flex-row">
+                        <div class="navbutton langbutton buttonopen open-nav_button" id="nav-open_button"><img class="logo rulogo" src="img/ru.svg"></div>
+                        <div class="navbutton_open langbutton_open"><img class="logo enlogo" src="img/en.svg"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="main-content flex-row lk">
+            <nav class="left-nav">
+                <div class="text-buttons flex-column">
+                    <a href="lk.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons" src="img/add.svg">Новый заказ</a>
+                    <a href="orders.html" class="nav-button text-low color-purple weight-500 "><img class="logo-buttons " src="img/zakazi.svg">Мои заказы</a>
+                    <a href="uslugi.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons" src="img/uslugi.svg">Услуги</a>
+                    <a href="balance.html" class="nav-button text-low color-purple weight-500 "><img class="logo-buttons " src="img/balance.svg">Баланс</a>
+                    <a href="referals.html" class="nav-button text-low color-purple weight-500 active"><img class="logo-buttons active" src="img/referals.svg">Рефералы</a>
+                    <a href="support.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons" src="img/support.svg">Поддержка</a>
+                </div>
+            </nav>
+            <nav class="nav-bottom_mobile">
+                <div class="text-buttons flex-row">
+                    <div class="nav-button_box"><a href="lk.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons mob-button" src="img/zakazi-mob.svg">Заказы</a></div>
+                    <div class="nav-button_box"><a href="uslugi.html" class="nav-button text-low color-purple  weight-500"><img class="logo-buttons  mob-button22" src="img/uslugi-mob.svg">Услуги</a></div>
+                    <div class="nav-button_box"><a href="referals.html"  class="nav-button text-low color-purple active weight-500"><img class="logo-buttons active mob-button25" src="img/refs-mob.svg">Рефералы</a></div>
+                    <div class="nav-button_box"><a href="support.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons mob-button20" src="img/support-mob.svg">Поддержка</a></div>
+                </div>
+            </nav>
+            <div class="choice-content" id="choice">
+                <div class="desktop-middle">
+                    <div class="order-head flex-row" style="justify-content: space-between;">
+                        <h1 class="choice-title mid-title text-choice-title text-med color-white">Рефералы</h1>
+                        <a style="color: #ffffff;" class="trybutton uslugi-desktop text-low weight-700 flex-row" onclick="document.getElementById('purchase-box').style.display='block'">Вывести деньги<img class="logo-ok" src="img/next.svg"></a>
+                    </div>
+                    <div class="order-head order-head_bot flex-column" style="justify-content: space-between;">
+                        <a class="choice-title color-white weight-500 text-low">Комиссионная ставка <span class="text-low weight-700 color-purple">7%</span></a>
+                        <a class="choice-title referals-text_bottom color-white weight-500 text-low">Минимальная выплата <span class="text-low weight-700 color-purple">300.00₽</span></a>
+                    </div>
+                    <div class="button-mobile"><a style="color: #ffffff;" class="trybutton text-low weight-700 flex-row" onclick="document.getElementById('purchase-box').style.display='block'">Вывести деньги<img class="logo-ok" src="img/next.svg"></a></div>
+                </div>
+                <div class="flex-column link-choice-box referal-link">
+                    <h1 class="choice-title color-white weight-700 text-low">Реферальная ссылка</h1>
+                        <input class="choice-link" value="357a3So9CbsNfBBgFYACGvxxS6tMaDoa1P" readonly="readonly" type="text" class="choice-roll-box flex-row" placeholder="">
+                        <img class="logo-ok ref-logo" src="img/link.svg">
+                        <img class="logo-ok ref-logo_copy" src="img/input-copy.svg">
+                </div>
+                <div class="flex-column oders-list referals-main">
+                    <div class="flex-column order-list-box">
+                        <div class="choice-inbox_title payment-info_title">
+                            <div class="flex-row" style="justify-content: space-between; align-items: center">
+                                <a class="text-verylow weight-700 color-white">Всего<br/>переходов</a>
+                                <a class="text-verylow weight-700 color-white">Регистрации</a>
+                                <a class="text-verylow weight-700 mob-hide-text color-white">Активные</a>
+                                <a class="text-verylow weight-700 mob-hide-text color-white">Конверсия</a>
+                                <a class="text-verylow weight-700 mob-hide-text color-white">Доход (общий)</a>
+                            </div>
+                        </div>
+                        <div class="choice-inbox">
+                            <Div class="flex-row" style="justify-content: space-between; align-items: center">
+                                <div class="table-text-box"><a class="text-verylow weight-500 color-lightgrey">17</a></div>
+                                <div class="table-text-box"><a class="text-verylow weight-500 color-lightgrey">10</a></div>
+                                <div class="table-text-box"><a class="mob-hide-text text-verylow weight-500 color-lightgrey">2</a></div>
+                                <div class="table-text-box"><a class="mob-hide-text text-verylow weight-500 color-lightgrey">3.00%</a></div>
+                                <div class="table-text-box"><a class="mob-hide-text text-verylow weight-500 color-lightgrey">49.00₽</a></div>
+                            </Div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-head history-block flex-mobile" style="justify-content: space-between;">
+                    <h1 class="choice-title text-choice-title text-med color-white">История</h1>
+                    <div class="filter"><h1 class="text-choice-title order-settings text-low color-white weight-500"><img class="logo-buttons" src="img/findsettings.svg">Показать подтверждения</h1></div>
+                </div>
+                <div class="flex-column oders-list history-referals">
+                    <div class="flex-column order-list-box">
+                        <div class="choice-inbox_title">
+                            <div class="flex-row" style="justify-content: space-between; align-items: center">
+                                <a class="text-verylow weight-700 color-white">Дата</a>
+                                <a class="text-verylow weight-700 color-white">Логин</a>
+                                <a class="mob-hide-text text-verylow weight-700 color-white">Сумма</a>
+                                <a class="mob-hide-text text-verylow weight-700 color-white">Статус</a>
+                            </div>
+                        </div>
+                        <div class="choice-inbox accept">
+                            <Div class="flex-row" style="justify-content: space-between; align-items: center">
+                                <div class="table-text-box"><a class="text-verylow weight-500 color-lightgrey">20.02.2022</a></div>
+                                <div class="table-text-box name-referal"><a class="text-verylow weight-500 color-lightgrey">vladikmadik</a></div>
+                                <div class="table-text-box"><a class="mob-hide-text text-verylow weight-500 color-lightgrey">500.00₽</a></div>
+                                <div class="table-text-box"><a class="mob-hide-text text-verylow weight-500 order-status order-status-box color-lightgrey">подтвержден</a></div>
+                            </Div>
+                        </div>
+                        <div class="choice-inbox choice-inbox_bottom">
+                            <Div class="flex-row" style="justify-content: space-between; align-items: center">
+                                <div class="table-text-box"><a class="text-verylow weight-500 color-lightgrey">15.02.2022</a></div>
+                                <div class="table-text-box name-referal"><a class="text-verylow weight-500 color-lightgrey">anastasiagord</a></div>
+                                <div class="table-text-box"><a class="mob-hide-text text-verylow weight-500 color-lightgrey">200.00₽</a></div>
+                                <div class="table-text-box"><a class="mob-hide-text text-verylow weight-500 order-status order-status-box color-lightgrey">подтвержден</a></div>
+                            </Div>
+                        </div>
+                    </div>
+                </div>
+                <div class="number-list">
+                    <div class="flex-row">
+                        <img src="img/circle-left.svg">
+                        <a class="number-list_select active-list color-white weight-700 text-verylow">1</a>
+                        <a class="number-list_select color-white weight-700 text-verylow">2</a>
+                        <a class="number-list_select color-white weight-700 text-verylow">3</a>
+                        <a class="number-list_select color-white weight-700 text-verylow">...</a>
+                        <a class="number-list_select color-white weight-700 text-verylow">32</a>
+                        <img src="img/circle-right.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="purchase-box" id="purchase-box">
+                <div class="purchase-window">
+                    <div onclick="document.getElementById('purchase-box').style.display='none'" class="pop-up-close flex-row" style="justify-content: end;"><img src="img/close.svg"></div>
+                    <div class="purchase-box-text"><a class="text-med color-white weight-700">Выведение средств</a></div>
+                    <div class="purchase-box-text purchase-box-text_bottom"><a class="text-low color-white weight-500">Вы можете <span style="color: #E857CC;">вывести средства на баланс</span><br/>или <span style="color: #E857CC;">вывести средства на плятежную систему</span></a></div>
+                    <div class="flex-column" style="justify-content: space-between;"><a href="orders.html" style="color: #ffffff;" class="trybutton text-low weight-700 flex-row">Перейти в мои заказы</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        const hide = document.getElementById('choice');
+        const show = document.getElementById('choice2');
+        const hide2 = document.getElementById('choice2')
+        const show2 = document.getElementById('choice')
+        const hide3 = document.querySelector('.choice-content-2');
+        const show3 = document.getElementById('choice3');
+        const hide4 = document.getElementById('choice3');
+        const show4 = document.querySelector('.choice-content-2');
+        function hideBlock() {
+            hide.style.display='none';
+        }
+        function showBlock() {
+            show.style.display='block';
+        }
+        function hideBlock2() {
+            hide2.style.display='none';
+        }
+        function showBlock2() {
+            show2.style.display='block';
+        }
+        function hideBlock3() {
+            hide3.style.display='none';
+        }
+        function showBlock3() {
+            show3.style.display='block';
+        }
+        function hideBlock4() {
+            hide4.style.display='none';
+        }
+        function showBlock4() {
+            show4.style.display='block';
+        }
+    </script>
+    <script src="js/select2.js"></script>
+    <script src="js/select3.js"></script>
+</body>
+</html>

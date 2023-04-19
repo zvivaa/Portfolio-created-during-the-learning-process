@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/meta.ico" type="image/x-icon">
+    <title>STARLIKES</title>
+</head>
+<body class="kabinet balance">
+    <div class="container">
+        <nav class="navigate">
+            <div class="nav-content flex-row">
+                <a href="index.html"><div class="logo-box"><img class="logo" src="img/logo.svg"></div></a>
+                <div class="second-box flex-row">
+                    <div class="text-box flex-row">
+                        <div class="lkname-select open-nav_button buttonopen"><a style="color: #ffffff;" class="text-low lkname navtext weight-700"><img class="logo-buttons" src="img/name-logo.svg">vladislove<img class="active arrow-down" src="img/arrow-dorwn.svg"></a>
+                            <div class="lkname-box_open lkname-box navbutton_open">
+                                <div class="flex-column">
+                                    <div class="flex-row opened-button_box"><img src="img/edit.svg"><a class="color-white text-lowest opened-button_text weight-500">Изменить профиль</a></div>
+                                    <div class="flex-row opened-button_box"><img src="img/profile-exit.svg"><a class="color-white text-lowest opened-button_text weight-500">Выйти</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a class="notificate"><img src="img/notificate.svg"></a>
+                        <a style="color: white;" class="text-low lkbalance navtext weight-700">Баланс:<span class="color-purple weight-500">0.00₽</span><img class="add-money" src="img/plus-money.svg"></a>
+                    </div>
+                    <div class="nav-dots mobile">
+                        <img class="dots" src="img/dots.svg">
+                    </div>
+                    <div class="button-box flex-row">
+                        <div class="navbutton langbutton buttonopen open-nav_button" id="nav-open_button"><img class="logo rulogo" src="img/ru.svg"></div>
+                        <div class="navbutton_open langbutton_open"><img class="logo enlogo" src="img/en.svg"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="main-content flex-row lk">
+            <nav class="left-nav">
+                <div class="text-buttons flex-column">
+                    <a href="lk.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons" src="img/add.svg">Новый заказ</a>
+                    <a href="orders.html" class="nav-button text-low color-purple weight-500 "><img class="logo-buttons " src="img/zakazi.svg">Мои заказы</a>
+                    <a href="uslugi.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons" src="img/uslugi.svg">Услуги</a>
+                    <a href="balance.html" class="nav-button text-low color-purple weight-500 active"><img class="logo-buttons active" src="img/balance.svg">Баланс</a>
+                    <a href="referals.html" class="nav-button text-low color-purple weight-500"><img class="logo-buttons" src="img/referals.svg">Рефералы</a>
+                    <a class="nav-button text-low color-purple weight-500"><img class="logo-buttons" src="img/support.svg">Поддержка</a>
+                </div>
+            </nav>
+            <div class="choice-content" id="choice">
+                <div class="order-head flex-row" style="justify-content: space-between;">
+                    <h1 class="choice-title text-choice-title text-med color-white">Баланс <span style="margin-left: 10px;" class="color-purple weight-500">0.00₽</span></h1>
+                    <a style="color: #ffffff;" class="trybutton text-low weight-700 flex-row" onclick="hideBlock(); showBlock()">Пополнить баланс<img class="logo-ok" src="img/next.svg"></a>
+                </div>
+                <div class="order-head order-head_bot flex-row" style="justify-content: space-between;">
+                    <h1 class="choice-title text-choice-title text-med color-white">История пополнений</h1>
+                    <h1 class="text-choice-title order-settings text-low color-white weight-500"><img class="logo-buttons" src="img/findsettings.svg">Показать подтвержденные</h1>
+                </div>
+                <div class="flex-column oders-list">
+                    <div class="flex-column order-list-box">
+                        <div class="choice-inbox_title payment-info_title">
+                            <div class="flex-row">
+                                <a class="text-verylow weight-700 color-white">Дата</a>
+                                <a align="center" class="text-verylow order-social weight-700 color-white">Метод<br/>пополнения</a>
+                                <a class="text-verylow weight-700 color-white">Сумма</a>
+                                <a class="text-verylow weight-700 color-white">Номер заказа</a>
+                                <a class="text-verylow status weight-700 color-white">Статус</a>
+                            </div>
+                        </div>
+                        <div class="choice-inbox">
+                            <Div class="flex-row">
+                                <a class="text-verylow weight-500 color-lightgrey oder-date">20.02.2022</a>
+                                <a class="text-verylow order-payment weight-500 color-lightgrey">Онлайн-касса</a>
+                                <a class="text-verylow order-text weight-500 color-lightgrey type-of-service">33.00₽</a>
+                                <a class="text-verylow order-number weight-500 color-lightgrey">#20033</a>
+                                <a class="text-verylow weight-500 order-status order-status-box color-lightgrey">подтвержден</a>
+                            </Div>
+                        </div>
+                        <div class="choice-inbox choice-inbox_bottom">
+                            <Div class="flex-row">
+                                <a class="text-verylow weight-500 color-lightgrey oder-date">15.02.2022</a>
+                                <a class="text-verylow order-payment weight-500 color-lightgrey">Онлайн-касса</a>
+                                <a class="text-verylow order-text weight-500 color-lightgrey type-of-service">200.00₽</a>
+                                <a class="text-verylow order-number weight-500 color-lightgrey">#200</a>
+                                <a class="text-verylow weight-500 order-status order-status-box color-lightgrey">подтвержден</a>
+                            </Div>
+                        </div>
+                    </div>
+                </div>
+                <div class="number-list">
+                    <div class="flex-row">
+                        <img src="img/circle-left.svg">
+                        <a class="number-list_select active-list color-white weight-700 text-verylow">1</a>
+                        <a class="number-list_select color-white weight-700 text-verylow">2</a>
+                        <a class="number-list_select color-white weight-700 text-verylow">3</a>
+                        <a class="number-list_select color-white weight-700 text-verylow">...</a>
+                        <a class="number-list_select color-white weight-700 text-verylow">32</a>
+                        <img src="img/circle-right.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="choice-content choice-content-2" id="choice2">
+                <div class="order-head flex-row" style="justify-content: space-between;">
+                    <h1 class="choice-title text-choice-title text-med color-white">Пополнение баланса</h1>
+                </div>
+                <div class="flex-column">
+                    <div class="order-info flex-column">
+                        <div class="order-info_main flex-row">
+                            <div class="order-info_place big-box">
+                                <h1 class="choice-title text-choice-title text-low color-white">Способ оплаты</h1>
+                                <div class="flex-row radio" style="align-items: center;">
+                                    <input onclick="ChangeWallet(); showWallet()" class="radio-balance radio" name="balance" value="online" type="radio" id="online"><label for="online" class="text-radio text-low color-white weight-500">Онлайн-касса</label>
+                                    <input onclick="ChangeCrypto(); HideWallet()" class="radio-balance radio radio-second" name="balance" value="crypto" type="radio" id="crypto"><label for="crypto" class="text-radio text-low color-white weight-500">Криптовалюта</label>
+                                </div>
+                                <div class="flex-column balance-box_full online-kassa">
+                                    <div class="flex-row balance-box_choice">
+                                        <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/pay-card.svg">Банковская карта</a></div>
+                                        <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/pay-umoney.svg">ЮMoney</a></div>
+                                        <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/pay-qiwi.svg">QIWI</a></div>
+                                    </div>
+                                    <div class="flex-row balance-box_choice box-choice">
+                                        <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/pay-sber.svg">SberPay</a></div>
+                                    </div>
+                                    <div class="flex-column link-choice-box">
+                                        <h1 class="choice-title color-white weight-700 text-low">Способ оплаты</h1>
+                                            <input class="choice-link" type="text" class="choice-roll-box flex-row" placeholder="">
+                                            <img class="logo-ok" src="img/cash.svg">
+                                    </div>
+                                </div>
+                                <div class="flex-column balance-box_full cryptowalet">
+                                    <div class="flex-row balance-box_choice">
+                                        <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/pay-btc.svg">BTC</a></div>
+                                        <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/pay-etc.svg">ETC</a></div>
+                                        <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/pay-bnb.svg">BNB</a></div>
+                                        <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/pay-usdc.svg">USDC</a></div>
+                                        <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/pay-usdt.svg">USDT</a></div>
+                                        <div class="box-choice-social"><a class="text-choice-social text-choice color-grey"><img class="logo-buttons" src="img/pay-doge.svg">DOGE</a></div>
+                                    </div>
+                                    <div class="flex-column link-choice-box">
+                                        <h1 class="choice-title color-white weight-700 text-low">Способ оплаты</h1>
+                                            <input class="choice-link" type="text" class="choice-roll-box flex-row" placeholder="Введите сумму пополнения">
+                                            <img class="logo-ok" src="img/cash.svg">
+                                    </div>
+                                </div>
+                                <div class="flex-column link-choice-box">
+                                    <h1 class="choice-title color-white weight-700 text-low">Или введите промокод</h1>
+                                    <div class="flex-row" style="justify-content: space-between;">
+                                        <div class="flex-row choice-link_main">
+                                            <input class="choice-link" type="text" class="choice-roll-box flex-row" placeholder="Введите промокод на пополнение баланса">
+                                            <img class="logo-ok" src="img/input-coupon.svg">
+                                        </div>
+                                        <div>
+                                            <a class="flex-row promo-button text-low weight-700 color-white">Хочу промокод</a>
+                                        </div>
+                                    </div>
+                                    <div class="flex-row button-box">
+                                        <a onclick="hideBlock3(); showBlock3()" style="color: #ffffff;" class="trybutton text-low weight-700 flex-row">Оплатить<img class="logo-ok" src="img/next.svg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="choice-content-2 choice-content" id="choice3">
+                <div class="order-head flex-row">
+                    <h1 class="back-button weight-500 choice-title text-choice-title text-low color-white" onclick="hideBlock4(); showBlock4()"><img class="logo-buttons" src="img/back.svg">Назад</h1>
+                    <h1 class="choice-title text-choice-title text-med color-white" align="center">Пополнение баланса</h1>
+                </div>
+                <div class="qr-code" align="center">
+                    <img src="img/qr.svg">
+                </div>
+                <div class="flex-column link-choice-box">
+                    <h1 class="choice-title color-white weight-700 text-low"></h1>
+                        <input class="choice-link" value="357a3So9CbsNfBBgFYACGvxxS6tMaDoa1P" readonly="readonly" type="text" class="choice-roll-box flex-row" placeholder="">
+                        <img class="logo-ok ref-logo" src="img/pay-btc.svg">
+                        <img class="logo-ok ref-logo_copy" src="img/input-copy.svg">
+                </div>
+                <div class="payment-info">
+                    <div class="order-head flex-row">
+                        <a class="text-lowest weight-500 order-status-box color-lightgrey">4 подтверждения</a>
+                        <h1 class="text-choice-title last-accept text-low color-white">Последние подтверждение: <span class="color-white weight-500 text-low"> 01.04.2022 @ 02:14:21</span></h1>
+                    </div>
+                    <div class="flex-column oders-list">
+                        <div class="flex-column order-list-box">
+                            <div class="choice-inbox_title payment-info_title">
+                                <div class="flex-row" style="justify-content: space-between;">
+                                    <a class="text-verylow weight-700 color-white">Номер заказа</a>
+                                    <a class="text-verylow weight-700 color-white">Сумма</a>
+                                    <a class="text-verylow weight-700 color-white">Дата оплаты</a>
+                                    <a class="text-verylow status weight-700 color-white">Статус оплаты</a>
+                                </div>
+                            </div>
+                            <div class="choice-inbox">
+                                <Div class="flex-row" style="justify-content: space-between;">
+                                    <a class="text-verylow order-number weight-500 color-lightgrey">#20033</a>
+                                    <a class="text-verylow weight-500 color-lightgrey type-of-service">33.00₽</a>
+                                    <a class="text-verylow weight-500 color-lightgrey">20.02.2022</a>
+                                    <a class="text-verylow weight-500 order-status-box color-lightgrey">подтвержден</a>
+                                </Div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        const hide = document.getElementById('choice');
+        const show = document.getElementById('choice2');
+        const hide2 = document.getElementById('choice2')
+        const show2 = document.getElementById('choice')
+        const hide3 = document.querySelector('.choice-content-2');
+        const show3 = document.getElementById('choice3');
+        const hide4 = document.getElementById('choice3');
+        const show4 = document.querySelector('.choice-content-2');
+
+        const changeHide = document.querySelector('.online-kassa');
+        const showHide = document.querySelector('.cryptowalet');
+        function hideBlock() {
+            hide.style.display='none';
+        }
+        function showBlock() {
+            show.style.display='block';
+        }
+        function hideBlock2() {
+            hide2.style.display='none';
+        }
+        function showBlock2() {
+            show2.style.display='block';
+        }
+        function hideBlock3() {
+            hide3.style.display='none';
+        }
+        function showBlock3() {
+            show3.style.display='block';
+        }
+        function hideBlock4() {
+            hide4.style.display='none';
+        }
+        function showBlock4() {
+            show4.style.display='block';
+        }
+
+        function ChangeWallet() {
+            showHide.style.display='none';
+        }
+        function ChangeCrypto() {
+            showHide.style.display='block';
+        }
+        function HideWallet() {
+            changeHide.style.display='none';
+        } 
+        function showWallet() {
+            changeHide.style.display='block';
+        }
+    </script>
+    <script src="js/select2.js"></script>
+    <script src="js/select3.js"></script>
+</body>
+</html>

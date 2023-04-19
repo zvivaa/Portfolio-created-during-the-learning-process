@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>TikTokCash</title>
+</head>
+<body class="body">
+  <nav class="navbar">
+    <div class="container-menu flex-column "id="container" style="justify-content: space-between">
+          <img class="menu-logo" src="fonts/TikTokCash.svg" alt="logo">
+        <div class="balance flex-column">
+              <span class="size-23 padding-menu" style="margin-bottom: 6px">Баланс</span>
+              <span class="size-23 color-purple flex-row tikcash"             
+                  style="
+                  font-weight: 800;
+                  align-items: baseline;
+                  margin-bottom: 20px;
+              ">129 TikCash<img class="tikcash-img" src="fonts/tiktok_purple.svg"></span>
+              <span class="size-16 padding-menu color-gray" style="margin-bottom: 11px">12,9 рублей</span>
+              <span class="size-16 padding-menu color-gray" style="margin-bottom: 30px">10 TikCash = 1₽</span>
+              <div class="withdraw flex-row padding-menu selected" onclick="document.getElementById('pop-up3').style.display='block'">
+                  <img src="fonts/Vector.svg" alt="" />
+                  <span class="size-16 menu-vivod" style="padding-left: 18px" >Вывести</span>
+              </div>
+          </div>
+          <div class="menu flex-column" id="menu">
+              <div class=" menu-item padding-menu flex-row selected" >
+                <a href="index.html"><img class="menu-img selected-img flex-row" src="fonts/user.svg" alt=""/></a>
+                <span class="size-18 menu-text"><a href="index.html">Профиль</span></a>
+              </div>
+            <div class="menu-item padding-menu flex-row selected">
+              <a href="magazine.html"><img class="menu-img selected-img" src="fonts/store.svg" alt="" /></a>
+              <span class="size-18 menu-text" ><a href="magazine.html">Магазин</a></span>
+            </div>
+            
+            <div class="menu-item padding-menu flex-row selected" >
+              <a href="top.html"><img class="menu-img" src="fonts/top.svg" alt="" /></a>
+              <span class="size-18 menu-text" ><a href="top.html">Топ</a></span>
+            </div>
+
+            <div class="menu-item padding-menu flex-row selected">
+              <a href="refferals.html"><img class="menu-img" src="fonts/referals.svg" alt="" /></a>
+              <span class="size-18 menu-text" ><a href="refferals.html">Рефералы</a></span>
+            </div>
+            <div class="desk-img">
+              <div class="menu-item padding-menu flex-row selected" style="
+              filter: invert(48%) sepia(53%) saturate(5322%) hue-rotate(
+              228deg) brightness(94%) contrast(100%);
+              cursor: pointer;
+              border-right: 3px solid #7361ef;
+
+              ">
+                <img class="menu-img" src="fonts/more.svg" alt="" />
+                <span class="size-18 menu-text" ><a href="more.html">Ещё</a></span>
+              </div>
+            </div>
+            <div class="select-mob">
+              <div class="mobile-item" style="
+              filter:  brightness(0) invert(1);
+              ">
+              <a href="more.html"><img class="menu-img1 flex-row selected-mob-img" src="fonts/more.svg" alt=""/></a>
+              <span class="size-18 menu-text">Профиль</span>
+              </div>
+            </div>
+          </div>
+          <div class="nav-exit padding-menu flex-row selected">
+            <img class="menu-img" src="fonts/exit.svg" alt="" />
+            <span class="size-16 exit" >Выход</span>
+        </div>
+    </div>
+</nav>
+
+    <div class="pop-up3" id="pop-up3">
+      <div id="pop-up-body3" class="pop-up-body3 flex-column" style="justify-content: space-between">
+        <form action="">
+          <span class="size-35" style="font-weight: 700; margin: auto;">Вывести</span>
+          <div class="flex-row" style="justify-content: space-between">
+            <img style="float: right; margin-left: 600px" id="pop-up-close3" class="pop-up-close" onclick="document.getElementById('pop-up3').style.display='none';" src="fonts/close.svg" alt="">
+          </div>
+          
+          <div class="select-wrapper active" id="select-wrapper2" style="margin-top: 90px;">
+            <div class="select" id="select">
+              <div class="select-header" id="select-header">
+                <span class="select-current">QIWI</span>
+              </div>
+              <div class="select-body" id="select-body">
+                <div class="select-item"></div>
+                <div class="select-item">ЮMoney</div>
+                <div class="select-item">Банковская карта</div>
+                <div class="select-item">Apple Pay</div>
+              </div>
+            </div>
+          </div>
+          <input id="vvod2" class="vvod" type="text2"  style="margin-top: 20px; width: 370px;" placeholder="Введите номер вашего кошелька">
+          <input id="vvod2" class="vvod" type="text2"  style="margin-top: 20px; width: 370px;" placeholder="Сумма вывода от 400₽ до 5 000₽">
+          <input id="btn-deposite2" class="btn-deposite" type="button" style="margin-top: 30px;" value="Вывести деньги">
+        </form>
+      </div>
+    </div>
+
+    <div class="pop-up3" id="pop-up4">
+      <div id="pop-up-body5" class="pop-up-body5 flex-column" style="justify-content: space-between">
+        <form action="">
+          <div class="flex-column">
+            <div class="flex-row" style="float: left; margin-left: 0;">
+              <div class="flex-column" style="float: left; margin-left: 0;">
+              <span class="size-35 faq-popup" style="font-weight: 700">FAQ</span>
+              <span class="size-23 faq-popup faq-question color-gray" style="font-weight: 500;">Часто задаваемые вопросы</span>
+            </div>
+            </div>
+            <div class="flex-row subtitle" style="float: left; margin-left: 0; margin-top: 50px;">
+              <div class="flex-column" style="float: left; margin-left: 0;">
+              <span class="size-16 faq-title" style="font-weight: 700">Мы собрали все самые популярные вопросы и ответили на них этой статье.</span>
+              <span class="size-16 faq-subtitle color-gray" style="font-weight: 500;">Если вы не нашли ответ на свой вопрос <a class="a-pop" href="#" style="text-decoration: underline; color: rgb(28, 158, 245);">напишите нам</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="flex-row" style="justify-content: space-between">
+            <img id="pop-up-close4" class="pop-up-close6" onclick="document.getElementById('pop-up4').style.display='none';" src="fonts/close.svg" alt="">
+          </div>
+            <div class="flex-help-row upper" style="justify-content: space-between; width: 100%;">
+              <div class="select-wrapper2 first-wrap active " id="select-wrapper2" style=" justify-content: space-between;">
+                <div class="select margin-select selectwidth" id="select">
+                  <div class="select-headerindex faqselect faq1 first"  id="select-header" onclick="document.getElementById('select3').style.margin-top;'25px'">
+                    <span class="select-current size-16 nameselector" >Сколько я могу заработать?</span>
+                  </div>
+                  <div class="select-body2 openmenu"  id="select-body">
+                    <div class="item"></div>
+                    <div class="item selectwidth item-single"><span class="size-16 nameselector">Сколько я могу заработать?</span><img class="item-minus" src="fonts/minus.svg"></div>
+                    <div class="item" style="font-weight: 300;">Это зависит только от вас, чем больше ТикТоков вы смотрите — тем больше заработаете. Возьмем среднюю цену за 5-10 секундный ролик — это примерно 1,5 рублей за 1 просмотр. Теперь мы можем посчитать, что за 45 минут вы сможете посмотреть 270 ТикТоков, за которые заработаете примерно 405 рублей</div>
+                  </div>
+                </div>
+              </div>
+              <div class="select-wrapper2 active margin-top-wrapper" id="select-wrapper2">
+                <div class="select margin-select selectwidth" id="select">
+                  <div class="select-headerindex faqselect" id="select-header">
+                    <span class="select-current size-16 nameselector">Как увеличить доход с просмотра?</span>
+                  </div>
+                  <div class="select-body2 openmenu"  id="select-body">
+                    <div class="item"></div>
+                    <div class="item selectwidth"><span class="size-16 nameselector">Как увеличить доход с просмотра?<img class="item-minus2" src="fonts/minus.svg"></span></div>
+                    <div class="item">Это зависит только от вас, чем больше ТикТоков вы смотрите — тем больше заработаете. Возьмем среднюю цену за 5-10 секундный ролик — это примерно 1,5 рублей за 1 просмотр. Теперь мы можем посчитать, что за 45 минут вы сможете посмотреть 270 ТикТоков, за которые заработаете примерно 405 рублей</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="flex-help-row" style="justify-content: space-between; width: 100%;">
+            <div class="select-wrapper2 active" id="select-wrapper2" style="margin-top: -10px; justify-content: space-between;">
+              <div class="select margin-select selectwidth" id="select">
+                <div class="select-headerindex faqselect faq1" id="select-header">
+                  <span class="select-current size-16 nameselector">Какие лимиты на вывод?</span>
+                </div>
+                <div class="select-body2 openmenu"  id="select-body">
+                  <div class="item"></div>
+                  <div class="item selectwidth item-single"><span class="size-16 nameselector">Какие лимиты на вывод?<img class="item-minus3" src="fonts/minus.svg"></span></div>
+                  <div class="item">Это зависит только от вас, чем больше ТикТоков вы смотрите — тем больше заработаете. Возьмем среднюю цену за 5-10 секундный ролик — это примерно 1,5 рублей за 1 просмотр. Теперь мы можем посчитать, что за 45 минут вы сможете посмотреть 270 ТикТоков, за которые заработаете примерно 405 рублей</div>
+                </div>
+              </div>
+            </div>
+            <div class="select-wrapper2 active" id="select-wrapper2" style="margin-top: -10px;">
+              <div class="select margin-select selectwidth" id="select">
+                <div class="select-headerindex faqselect" id="select-header">
+                  <span class="select-current size-16 nameselector">АвтоКликер работает с выключенным телефоном?</span>
+                </div>
+                <div class="select-body2 openmenu"id="select-body">
+                  <div class="item"></div>
+                  <div class="item selectwidth"><span class="size-16 nameselector">АвтоКликер работает с выключенным телефоном?<img class="item-minus4" src="fonts/minus.svg"></span></div>
+                  <div class="item">Это зависит только от вас, чем больше ТикТоков вы смотрите — тем больше заработаете. Возьмем среднюю цену за 5-10 секундный ролик — это примерно 1,5 рублей за 1 просмотр. Теперь мы можем посчитать, что за 45 минут вы сможете посмотреть 270 ТикТоков, за которые заработаете примерно 405 рублей</div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="flex-help-row" style="justify-content: space-between; width: 100%;">
+          <div class="select-wrapper2 active" id="select-wrapper2" style="margin-top:-10px; justify-content: space-between;">
+            <div class="select margin-select selectwidth" id="select3">
+              <div class="select-headerindex faqselect" id="select-header">
+                <span class="select-current size-16 nameselector">Сколько по времени выводятся деньги?</span>
+              </div>
+              <div class="select-body2 openmenu" id="select-body">
+                <div class="item"></div>
+                <div class="item selectwidth"><span class="size-16 nameselector">Сколько по времени выводятся деньги?<img class="item-minus5" src="fonts/minus.svg"></span></div>
+                <div class="item">Это зависит только от вас, чем больше ТикТоков вы смотрите — тем больше заработаете. Возьмем среднюю цену за 5-10 секундный ролик — это примерно 1,5 рублей за 1 просмотр. Теперь мы можем посчитать, что за 45 минут вы сможете посмотреть 270 ТикТоков, за которые заработаете примерно 405 рублей</div>
+              </div>
+            </div>
+          </div>
+          <div class="select-wrapper2 active" id="select-wrapper2" style="margin-top: -10px; ">
+            <div class="select margin-select selectwidth" id="select">
+              <div class="select-headerindex faqselect" id="select-header">
+                <span class="select-current size-16 nameselector">На какие платежные системы можно сделать вывод?</span>
+              </div>
+              <div class="select-body2 openmenu"  id="select-body">
+                <div class="item"></div>
+                <div class="item selectwidth"><span class="size-16 nameselector ">На какие платежные системы можно сделать вывод?<img class="item-minus6" src="fonts/minus.svg"></span></div>
+                <div class="item">Это зависит только от вас, чем больше ТикТоков вы смотрите — тем больше заработаете. Возьмем среднюю цену за 5-10 секундный ролик — это примерно 1,5 рублей за 1 просмотр. Теперь мы можем посчитать, что за 45 минут вы сможете посмотреть 270 ТикТоков, за которые заработаете примерно 405 рублей</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="pop-up3" id="pop-up5">
+      <div id="pop-up-body4" class="pop-up-body4 flex-column">
+        <form action="">
+          <div class="flex-column">
+            <div class="flex-row" style="float: left; margin-left: 0;">
+              <div class="flex-column" style="float: left; margin-left: 0;">
+              <span class="size-35 title-inst" style="font-weight: 700">Инструкция</span>
+              <span class="size-16 instruction-first">Для начала нужно авторизоваться в <a href="a" class="a-pop" style="text-decoration: underline; color: rgb(28, 158, 245);">приложении</a>, нажмите на кнопку <span class="color-black" style="font-weight: 800;">«Войти»</span> и отправьте нашему боту любое сообщение.<br/>Готово! Теперь можно смотреть TikTok и зарабатывать.</span>
+            </div>
+            </div>
+          </div>
+          <div class="flex-row" style="justify-content: space-between">
+            <img id="pop-up-close4" class="pop-up-close close-instr" onclick="document.getElementById('pop-up5').style.display='none';" src="fonts/close.svg" alt="">
+          </div>
+          <div class="instr-content">
+            <div class="flex-row" style="justify-content: space-between; width: 100%;">
+              <div class="content-instr" id="select-header" onclick="document.getElementById('select3').style.margin-top;'25px'">
+                <span class="" style="font-weight: bold;color:#7361EF">Меню приложения:</span><br/>
+                <span class="" style="font-weight: 700;color:#212121">1) ТОП игроков:</span><br/>
+                      Сюда попадают самые активные игроки, чем больше ТикТоков вы посмотрите - тем выше вы будете в топе. Игроки находящиеся в топе чаще получают дополнительные бонусы, ваучеры и улучшения.<br/>
+                <span class="" style="font-weight: 700;color:#212121">2) Магазин:</span><br/>
+                      В магазине можно пополнить короны, купить улучшения и ускорители, чтобы зарабатывать быстрее<br/>
+                <span class="" style="font-weight: 700;color:#212121">3) Рефералы:</span><br/>
+                      Тут можно получить ссылку для приглашения друзей. За каждого активного друга вы будете получать по 300 TikCoin и 20 👑<br/>
+                <span class="" style="font-weight: 700;color:#212121">3) Ещё:</span><br/>
+                      В этом разделе собраны все важные ссылки для пользователей (Поддержка, канал проекта, часто задаваемые вопросы и т.д)
+              </div>
+            </div>
+            <div class="flex-row" style="justify-content: space-between">
+              <div class="content-instr" id="select-header" onclick="document.getElementById('select3').style.margin-top;'25px'">
+                <span class="" style="font-weight: 800;color:#7361EF">Валюты:</span><br/>
+                <span class="" style="font-weight: 800;color:#212121">TikCoin</span> — Вы их получаете за просмотр ТикТоков<br/>
+                после чего их можно вывести.<br/>
+                (10 TikCoin = 1₽ при выводе)<br/>
+                <span class="" style="font-weight: 800;color:#212121">Короны</span> — Валюта которую вы можете получить<br/>
+                приглашая игроков и за задания или донат.<br/>
+                Используется для покупок улучшений в магазине.
+                <div class="vaucher"><span class="" style="font-weight: 800;color:#7361EF" >Ваучеры:</span><br/><span class="" style="font-weight: 800;">Активируя ваучеры вы можете бесплатно получать улучшения, ускорители, TikCoin и короны.<br/>Мы раздаём ваучеры на нашем канале и в боте, подпишитесь, чтобы не пропускать новые раздачи 👆</span></div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>    
+
+  <div class="hero-content">
+      <div class="header flex-row">
+        <span class="size-35" style="font-weight: 700; margin-left: 15px;">Ещё</span>
+        <div class="flex-row selected">
+          <img class="hero-exit-img" src="fonts/Group.svg" alt="" />
+          <span class="size-16 telegram vxod-desk" style="font-weight: 700"
+            >Войти с помощью Telegram</span>
+          <span class="size-16 telegram vxod-mob" style="font-weight: 700;"
+          >Войти</span>
+        </div>
+    </div>
+    <div class="more-box">
+      <div class="more-item" style="justify-content: space-between;">
+        <div class="more-content">
+          <div class="flex-row">
+            <img class="more-img" src="fonts/circle-tg.svg">
+            <div class="flex-column more-text">
+              <span class="size-23 more-title">Telegram канал проекта</span>
+              <span class="size-16 more-subtitle color-gray">Новости</span>
+            </div>
+          </div>
+        <input class="btn-more" type="button" value="Перейти" style="margin-right: 25px;">
+        </div>
+      </div>
+      <div class="more-item" style="justify-content: space-between;">
+        <div class="more-content">
+          <div class="flex-row">
+            <img class="more-img" src="fonts/circle-instruction.svg">
+            <div class="flex-column more-text">
+              <span class="size-23 more-title">Инструкция</span>
+              <span class="size-16  more-subtitle color-gray">Как пользоваться приложением</span>
+            </div>
+        </div>
+        <input class="btn-more" type="button" value="Перейти" onclick="document.getElementById('pop-up5').style.display='block';" style="margin-right: 25px;">
+        </div>
+      </div>
+      <div class="more-item" style="justify-content: space-between;">
+        <div class="more-content">
+          <div class="flex-row">
+            <img class="more-img" src="fonts/circle-teh.svg">
+            <div class="flex-column more-text">
+              <span class="size-23 more-title">FAQ</span>
+              <span class="size-16  more-subtitle color-gray">Часто задаваемые вопросы</span>
+            </div>
+          </div>
+        <input class="btn-more" type="button" value="Перейти" onclick="document.getElementById('pop-up4').style.display='block';" style="margin-right: 25px;">
+        </div>
+      </div>
+      <div class="more-item" style="justify-content: space-between;">
+        <div class="more-content" >
+          <div class="flex-row">
+            <img class="more-img" src="fonts/circle-faq.svg">
+            <div class="flex-column more-text">
+              <span class="size-23 more-title">Техническая поддержка</span>
+              <span class="size-16  more-subtitle color-gray">По любым вопросам</span>
+            </div>
+          </div>
+        <input class="btn-more" type="button"  value="Перейти" style="margin-right: 25px;">
+        </div>
+      </div>
+    </div>
+    <div class="user-accept" style=" margin-left: 15px;">
+      <a href="#" style="text-decoration: underline; color: gray;"><p class="size-17 color-gray user-accept">Пользовательское соглашение</p></a>
+    </div>
+  </div>
+  <script src="js/select.js"></script>
+</body>
+</html>
